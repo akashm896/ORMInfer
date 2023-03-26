@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: org.springframework.samples.petclinic.owner.OwnerController: org.springframework.web.servlet.ModelAndView showOwner(int)
 github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
-starttime, test: 1679725152294
+starttime, test: 1679844006412
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: org.springframework.web.bind.annotation.PostMapping is a phantom class!
@@ -30600,37 +30600,12 @@ PetType fields =
 {}
 {}
  Node contains nested fields
-u_idu_ownerId
-fact {  all v0 : u_Sel___Cartesian_____19 |  all v1 : u_org_springframework_samples_petclinic_owner_Pet | v0.u_id = v1.u_ownerId <=> v1 in v0.u_pets }u_Sel___Cartesian_____19[sig u_Cartesian___ClassRef13 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef13 = u_org_springframework_samples_petclinic_owner_Owner }
-, sig u_Cartesian___ClassRef7 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef7 = u_org_springframework_samples_petclinic_owner_Owner }
-, sig u_Cartesian___ClassRef10 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef10 = u_org_springframework_samples_petclinic_owner_Owner }
-, sig u_Cartesian___ClassRef16 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef16 = u_org_springframework_samples_petclinic_owner_Owner }
-, sig u_Pi___Sel_____Cartesi8 in u_org_springframework_samples_petclinic_owner_Owner {}
-, fact { u_Pi___Sel_____Cartesi8 = u_Sel___Cartesian_____6 }, sig u_Pi___Sel_____Cartesi14 in u_org_springframework_samples_petclinic_owner_Owner {}
-, sig u_Cartesian___ClassRef20 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef20 = u_org_springframework_samples_petclinic_owner_Owner }
-, sig u_Cartesian___ClassRef4 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef4 = u_org_springframework_samples_petclinic_owner_Owner }
-, fact { u_Pi___Sel_____Cartesi14 = u_Sel___Cartesian_____12 }, fact {  all v0 : u_Sel___Cartesian_____19 |  all v1 : u_org_springframework_samples_petclinic_owner_Pet | v0.u_id = v1.u_ownerId <=> v1 in v0.u_pets }, sig u_Pi___Sel_____Cartesi11 in u_org_springframework_samples_petclinic_owner_Owner {}
-, sig u_Pi___Sel_____Cartesi17 in u_org_springframework_samples_petclinic_owner_Owner {}
-, fact { u_Pi___Sel_____Cartesi17 = u_Sel___Cartesian_____15 }, fact { u_Pi___Sel_____Cartesi5 = u_Sel___Cartesian_____3 }, fact { u_Pi___Sel_____Cartesi11 = u_Sel___Cartesian_____9 }, sig u_Cartesian___ClassRef2 in u_org_springframework_samples_petclinic_owner_Owner {}
-fact { u_Cartesian___ClassRef2 = u_org_springframework_samples_petclinic_owner_Owner }
-, sig u_Pi___Sel_____Cartesi5 in u_org_springframework_samples_petclinic_owner_Owner {}
-]
-u_typeIdu_id
-u_org_springframework_samples_petclinic_owner_Petu_org_springframework_samples_petclinic_owner_PetTypeEquals
-| Alpha.typeId
-| PetType.id
-u_ownerIdu_id
-u_org_springframework_samples_petclinic_owner_Petu_org_springframework_samples_petclinic_owner_OwnerEquals
-| Alpha.ownerId
-| Owner.id
-u_idu_ownerId
-u_org_springframework_samples_petclinic_owner_Owneru_org_springframework_samples_petclinic_owner_PetEquals
-| Alpha.id
-| Pet.ownerId
-Time elapsed: 261.642 seconds
+u_Join___Sel_____Carte18u_Sel___Cartesian_____19u_idu_ownerId
+u_Join___Sel_____Carte18
+Akash
+u_Join___Alpha___Class22
+Akash
+u_Join___Alpha___Class24
+Akash
+u_Join___Alpha___Class26
+Time elapsed: 3.087 seconds

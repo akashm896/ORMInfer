@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: com.reljicd.controller.PostController: java.lang.String editPostWithId(java.lang.Long,java.security.Principal,org.springframework.ui.Model)
 github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
-starttime, test: 1679722215694
+starttime, test: 1679851961909
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: org.springframework.beans.factory.annotation.Autowired is a phantom class!
@@ -127276,71 +127276,33 @@ Post fields =
 {}
 {}
  Node contains nested fields
-NullNodeu_Sel___ClassRef_com_r4.u_comments[sig u_Pi___Join_____Sel___5 in u_com_reljicd_model_User {}
-, sig u_____NotEq_____NotEq_10 in univ {}, fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe9.u_body) else (u___modelattribute__post_body))) else (u___modelattribute__post_body)) }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__post))) else (u___modelattribute__post)) }, sig u_Join___Sel_____Class3 in u_com_reljicd_model_User {}
-fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_model_User_c }, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, sig u_____NotEq_____NotEq_1 in univ {}, fact { u_Pi___Join_____Sel___5 = u_Join___Sel_____Class3 }, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_Post {}
-, sig u_____NotEq_____NotEq_7 in univ {}, NullNode]
-u_idu_post_id
-fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : u_com_reljicd_model_Comment | v2.u_id = v3.u_post_id <=> v3 in v2.u_comments }u_Sel___ClassRef_com_r25.u_comments[sig u_Pi___Join_____Sel___5 in u_com_reljicd_model_User {}
-, sig u_____NotEq_____NotEq_10 in univ {}, fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe9.u_body) else (u___modelattribute__post_body))) else (u___modelattribute__post_body)) }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : u_com_reljicd_model_Comment | v2.u_id = v3.u_post_id <=> v3 in v2.u_comments }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__post))) else (u___modelattribute__post)) }, sig u_Join___Sel_____Class3 in u_com_reljicd_model_User {}
-fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_model_User_c }, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, sig u_____NotEq_____NotEq_1 in univ {}, fact { u_Pi___Join_____Sel___5 = u_Join___Sel_____Class3 }, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_Post {}
-, sig u_____NotEq_____NotEq_7 in univ {}, NullNode]
-u_post_idu_id
-u_com_reljicd_model_Commentu_com_reljicd_model_PostEquals
-| Alpha.post_id
-| Post.id
-u_user_idu_id
-u_com_reljicd_model_Postu_com_reljicd_model_UserEquals
-| Alpha.user_id
-| User.id
-u_idu_post_id
-u_com_reljicd_model_Postu_com_reljicd_model_CommentEquals
-| Alpha.id
-| Comment.post_id
-u_user_idu_id
-u_com_reljicd_model_Commentu_com_reljicd_model_UserEquals
-| Alpha.user_id
-| User.id
-u_role_idu_user_id
-u_com_reljicd_model_Useru_com_reljicd_model_RoleEquals
-| Alpha.role_id
-| Role.user_id
-u_idu_user_id
-u_com_reljicd_model_Useru_com_reljicd_model_PostEquals
-| Alpha.id
-| Post.user_id
+u_Join___Sel_____Class3
+u_Join___Sel_____Class11u_Sel___ClassRef_com_r12u_idu_post_id
+u_Join___Sel_____Class11
+Akash
+u_Join___Alpha___Class14
+Akash
+u_Join___Alpha___Class16
+Akash
+u_Join___Alpha___Class18
+Akash
+u_Join___Alpha___Class20
+Akash
+u_Join___Alpha___Class22
+Akash
+u_Join___Alpha___Class24
  Node contains nested fields
-NullNodeu_Sel___ClassRef_com_r4.u_user[fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_user |  all v5 : u_com_reljicd_model_Post | v4.u_id = v5.u_user_id <=> v5 in v4.u_posts }, sig u_____NotEq_____NotEq_40 in univ {}, sig u_Pi___Sel_____ClassRe45 in u_com_reljicd_model_Post {}
-, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : u_com_reljicd_model_User | v3.u_user_id = v4.u_id <=> v4 in v3.u_user }, sig u_Pi___Join_____Sel___5 in u_com_reljicd_model_User {}
-, fact { u_Pi___Sel_____ClassRe45 = u_Sel___ClassRef_com_r44 }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : u_com_reljicd_model_Post | v3.u_post_id = v4.u_id <=> v4 in v3.u_post }, sig u_____NotEq_____NotEq_7 in univ {}, fact { u_____NotEq_____NotEq_43 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe45.u_title) else (u___modelattribute__post_title))) else (u___modelattribute__post_title)) }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_user |  all v5 : u_com_reljicd_model_Role | v4.u_role_id = v5.u_user_id <=> v5 in v4.u_roles }, sig u_____NotEq_____NotEq_46 in univ {}, sig u_Join___Sel_____Class3 in u_com_reljicd_model_User {}
-fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_model_User_c }, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_Post {}
-, fact { u_____NotEq_____NotEq_10 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Sel___ClassRef_com_r4.u_comments) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Sel___ClassRef_com_r25.u_comments) else (u___modelattribute__post_comments))) else (u___modelattribute__post_comments)) }, fact { u_____NotEq_____NotEq_40 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe42.u_id) else (u___modelattribute__post_id))) else (u___modelattribute__post_id)) }, sig u_____NotEq_____NotEq_43 in univ {}, sig u_____NotEq_____NotEq_10 in univ {}, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_post |  all v5 : u_com_reljicd_model_Comment | v4.u_id = v5.u_post_id <=> v5 in v4.u_comments }, fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe9.u_body) else (u___modelattribute__post_body))) else (u___modelattribute__post_body)) }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : u_com_reljicd_model_Comment | v2.u_id = v3.u_post_id <=> v3 in v2.u_comments }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_post |  all v5 : u_com_reljicd_model_User | v4.u_user_id = v5.u_id <=> v5 in v4.u_user }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__post))) else (u___modelattribute__post)) }, sig u_____NotEq_____NotEq_1 in univ {}, fact { u_Pi___Join_____Sel___5 = u_Join___Sel_____Class3 }, sig u_Pi___Sel_____ClassRe42 in u_com_reljicd_model_Post {}
-, fact { u_Pi___Sel_____ClassRe42 = u_Sel___ClassRef_com_r41 }, NullNode]
-u_user_idu_id
-fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_Sel___ClassRef_com_r4 |  all v5 : v4.u_user |  all v6 : v5.u_Sel___ClassRef_com_r49 |  all v7 : u_com_reljicd_model_User | v6.u_user_id = v7.u_id <=> v7 in v6.u_user }u_Sel___ClassRef_com_r49.u_user[fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_user |  all v5 : u_com_reljicd_model_Post | v4.u_id = v5.u_user_id <=> v5 in v4.u_posts }, sig u_____NotEq_____NotEq_40 in univ {}, sig u_Pi___Sel_____ClassRe45 in u_com_reljicd_model_Post {}
-, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : u_com_reljicd_model_User | v3.u_user_id = v4.u_id <=> v4 in v3.u_user }, sig u_Pi___Join_____Sel___5 in u_com_reljicd_model_User {}
-, fact { u_Pi___Sel_____ClassRe45 = u_Sel___ClassRef_com_r44 }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : u_com_reljicd_model_Post | v3.u_post_id = v4.u_id <=> v4 in v3.u_post }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_Sel___ClassRef_com_r4 |  all v5 : v4.u_user |  all v6 : v5.u_Sel___ClassRef_com_r49 |  all v7 : u_com_reljicd_model_User | v6.u_user_id = v7.u_id <=> v7 in v6.u_user }, sig u_____NotEq_____NotEq_7 in univ {}, fact { u_____NotEq_____NotEq_43 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe45.u_title) else (u___modelattribute__post_title))) else (u___modelattribute__post_title)) }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_user |  all v5 : u_com_reljicd_model_Role | v4.u_role_id = v5.u_user_id <=> v5 in v4.u_roles }, sig u_____NotEq_____NotEq_46 in univ {}, sig u_Join___Sel_____Class3 in u_com_reljicd_model_User {}
-fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_model_User_c }, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_Post {}
-, fact { u_____NotEq_____NotEq_10 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Sel___ClassRef_com_r4.u_comments) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Sel___ClassRef_com_r25.u_comments) else (u___modelattribute__post_comments))) else (u___modelattribute__post_comments)) }, fact { u_____NotEq_____NotEq_40 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe42.u_id) else (u___modelattribute__post_id))) else (u___modelattribute__post_id)) }, sig u_____NotEq_____NotEq_43 in univ {}, sig u_____NotEq_____NotEq_10 in univ {}, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_post |  all v5 : u_com_reljicd_model_Comment | v4.u_id = v5.u_post_id <=> v5 in v4.u_comments }, fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Pi___Sel_____ClassRe9.u_body) else (u___modelattribute__post_body))) else (u___modelattribute__post_body)) }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : u_com_reljicd_model_Comment | v2.u_id = v3.u_post_id <=> v3 in v2.u_comments }, fact {  all v0 : u_Sel___ClassRef_com_r4 |  all v1 : v0.u_comments |  all v2 : v1.u_Sel___ClassRef_com_r25 |  all v3 : v2.u_comments |  all v4 : v3.u_post |  all v5 : u_com_reljicd_model_User | v4.u_user_id = v5.u_id <=> v5 in v4.u_user }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (((((((u_principal != NullNode) => (u_principalusername = u_Pi___Join_____Sel___5.u_username) else (0!=0))) => (u_1) else (u_0)) != u_0) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__post))) else (u___modelattribute__post)) }, sig u_____NotEq_____NotEq_1 in univ {}, fact { u_Pi___Join_____Sel___5 = u_Join___Sel_____Class3 }, sig u_Pi___Sel_____ClassRe42 in u_com_reljicd_model_Post {}
-, fact { u_Pi___Sel_____ClassRe42 = u_Sel___ClassRef_com_r41 }, NullNode]
-u_role_idu_user_id
-u_com_reljicd_model_Useru_com_reljicd_model_RoleEquals
-| Alpha.role_id
-| Role.user_id
-u_user_idu_role_id
-u_com_reljicd_model_Roleu_com_reljicd_model_UserEquals
-| Alpha.user_id
-| User.role_id
-u_idu_user_id
-u_com_reljicd_model_Useru_com_reljicd_model_PostEquals
-| Alpha.id
-| Post.user_id
-u_user_idu_id
-u_com_reljicd_model_Postu_com_reljicd_model_UserEquals
-| Alpha.user_id
-| User.id
-u_idu_post_id
-u_com_reljicd_model_Postu_com_reljicd_model_CommentEquals
-| Alpha.id
-| Comment.post_id
-Time elapsed: 3.021 seconds
+u_Join___Sel_____Class3
+u_Join___Sel_____Class33u_Sel___ClassRef_com_r34u_user_idu_id
+u_Join___Sel_____Class33
+Akash
+u_Join___Alpha___Class36
+Akash
+u_Join___Alpha___Class38
+Akash
+u_Join___Alpha___Class40
+Akash
+u_Join___Alpha___Class42
+Akash
+u_Join___Alpha___Class44
+Time elapsed: 2.455 seconds

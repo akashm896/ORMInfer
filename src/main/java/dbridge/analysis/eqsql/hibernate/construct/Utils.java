@@ -372,8 +372,8 @@ public class Utils {
                         String retType= tableEntity.toString().substring(tableEntity.toString().lastIndexOf("//.")+1);
                         // Akash
                         String repo = invokeExprStr.substring(invokeExprStr.indexOf("<")+1, invokeExprStr.indexOf(":"));
-//                        relExp = new SelectNode(new ClassRefNode(retType),new NullNode());
-                        relExp = new SelectNode(new ClassRefNode(repo),new NullNode());
+                        relExp = new SelectNode(new ClassRefNode(retType),new NullNode());
+//                        relExp = new SelectNode(new ClassRefNode(repo),new NullNode());
 
                     }
                     else{
