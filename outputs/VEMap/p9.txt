@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: com.reljicd.controller.BlogController: java.lang.String blogForUsername(java.lang.String,int,org.springframework.ui.Model)
-github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Desktop/current/dbridge_loop
-starttime, test: 1679114698881
+github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
+starttime, test: 1679722061200
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: org.springframework.beans.factory.annotation.Autowired is a phantom class!
@@ -264,8 +264,8 @@ ArithAdd
 
 {<list>=61, <rel>=71, <repo>=41, <cond>=31, <nop>=46, <clm>=73, <init_val>=76, <join_right>=45, <itr>=78, <clmagg>=75, <receiver>=54, <aggvar>=68, <elseval>=34, <col1>=5, <list2>=24, <col2>=6, <list1>=21, <coll>=77}
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/akash/Desktop/current/dbridge_loop/lib/eqsql.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/akash/Desktop/current/dbridge_loop/lib/soot-trunk-1.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/akash/Study/3rd%20sem/Project/current%20use/NRAandLoops/lib/eqsql.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/akash/Study/3rd%20sem/Project/current%20use/NRAandLoops/lib/soot-trunk-1.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 ServiceAllocTransform.java: internalTransform(): methodsig: <com.reljicd.controller.BlogController: java.lang.String blogForUsername(java.lang.String,int,org.springframework.ui.Model)>
@@ -2365,7 +2365,7 @@ Flatten.java: getNestedFields(): check *ToMany sf: posts , type = java.util.Coll
 Flatten.java: getNestedFields(): returning: [<com.reljicd.model.User: java.util.Collection roles>, <com.reljicd.model.User: java.util.Collection posts>]
 DIRRegionAnalyzer.java: constructDIR(): check nestedFields=[<com.reljicd.model.User: java.util.Collection roles>, <com.reljicd.model.User: java.util.Collection posts>]
 DIRRegionAnalyzer.java: constructDIR(): lookup (retAccp) = return.roles
-DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=User
+DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=com.reljicd.model.User
 Construct/Utils.java: bcelActualCollectionFieldType(): className= com.reljicd.model.User
  fieldName= roles
 Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private Long id [RuntimeVisibleAnnotations]
@@ -2518,7 +2518,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Role
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Role
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -2767,7 +2767,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Role
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Role
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -2877,7 +2877,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Role
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Role
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -2936,7 +2936,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= user
@@ -3067,7 +3067,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -3103,7 +3103,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -3233,7 +3233,7 @@ DIRRegionAnalyzer.java: constructDIR(): key : return.roles
 | | | | | | NullOp
 | | | | | | NullOp
 DIRRegionAnalyzer.java: constructDIR(): lookup (retAccp) = return.posts
-DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=User
+DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=com.reljicd.model.User
 Construct/Utils.java: bcelActualCollectionFieldType(): className= com.reljicd.model.User
  fieldName= posts
 Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private Long id [RuntimeVisibleAnnotations]
@@ -3407,7 +3407,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -3648,7 +3648,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Role
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Role
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -3758,7 +3758,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Role
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Role
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -3817,7 +3817,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= user
@@ -3948,7 +3948,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -3984,7 +3984,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -4078,7 +4078,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -4174,7 +4174,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= post
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = Comment
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Comment
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinedColumn(): joined Column value=  post_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -4305,7 +4305,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -4341,7 +4341,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -4394,7 +4394,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Comment
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Comment
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -4635,7 +4635,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Role
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Role
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -4688,7 +4688,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= user
@@ -9089,7 +9089,7 @@ Flatten.java: getNestedFields(): check *ToMany sf: posts , type = java.util.Coll
 Flatten.java: getNestedFields(): returning: [<com.reljicd.model.User: java.util.Collection roles>, <com.reljicd.model.User: java.util.Collection posts>]
 DIRRegionAnalyzer.java: constructDIR(): check nestedFields=[<com.reljicd.model.User: java.util.Collection roles>, <com.reljicd.model.User: java.util.Collection posts>]
 DIRRegionAnalyzer.java: constructDIR(): lookup (retAccp) = return.roles
-DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=User
+DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=com.reljicd.model.User
 Construct/Utils.java: bcelActualCollectionFieldType(): className= com.reljicd.model.User
  fieldName= roles
 Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private Long id [RuntimeVisibleAnnotations]
@@ -9395,7 +9395,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Role
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Role
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -9644,7 +9644,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Role
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Role
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -9754,7 +9754,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Role
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Role
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -9813,7 +9813,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= user
@@ -9944,7 +9944,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -9980,7 +9980,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -10111,7 +10111,7 @@ DIRRegionAnalyzer.java: constructDIR(): key : return.roles
 | | | | | | NullOp
 | | | | | | NullOp
 DIRRegionAnalyzer.java: constructDIR(): lookup (retAccp) = return.posts
-DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=User
+DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=com.reljicd.model.User
 Construct/Utils.java: bcelActualCollectionFieldType(): className= com.reljicd.model.User
  fieldName= posts
 Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private Long id [RuntimeVisibleAnnotations]
@@ -10570,7 +10570,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -10811,7 +10811,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Role
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Role
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -10921,7 +10921,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Role
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Role
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/User;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -10980,7 +10980,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= user
@@ -11111,7 +11111,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -11147,7 +11147,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -11241,7 +11241,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -11337,7 +11337,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= post
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = Comment
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Comment
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinedColumn(): joined Column value=  post_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -11468,7 +11468,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -11504,7 +11504,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Comment;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Comment
-NRA.java: genExprNra(): baseclass = Post
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Post
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Comment
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= post
@@ -11557,7 +11557,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private com.
 Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/persistence/ManyToOne;
 Construct/Utils.java: bcelActualCollectionFieldType(): ManytoOne field= user
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.User
-NRA.java: genExprNra(): baseclass = Comment
+NRA.java: genExprNra(): baseclass = com.reljicd.model.Comment
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.User
 NRA.java: getJoinedColumn(): joined Column value=  user_id
 NRA.java: getJoinCondFromField(): ManyToOne Field
@@ -11798,7 +11798,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Role
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Role
 NRA.java: getJoinCondFromField(): ManyToMany Field
 NRA.java: getCondFromManyToMany(): tags = [Signature: Ljava/util/Collection<Lcom/reljicd/model/Role;>;, Visibility Annotation: level: RUNTIME (runtime-visible)
@@ -11851,7 +11851,7 @@ Construct/Utils.java: bcelActualCollectionFieldType(): annotation Entry= Ljavax/
 Construct/Utils.java: bcelActualCollectionFieldType(): att = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 Construct/Utils.java: bcelActualCollectionFieldType(): sigatt = Signature: Ljava/util/Collection<Lcom/reljicd/model/Post;>;
 NRA.java: genExprNra(): sfEntity=com.reljicd.model.Post
-NRA.java: genExprNra(): baseclass = User
+NRA.java: genExprNra(): baseclass = com.reljicd.model.User
 NRA.java: genExprNra(): fieldclass = com.reljicd.model.Post
 NRA.java: getJoinCondFromField(): OneToMany Field
 NRA.java: getCondFromOneToMany(): mappedBy= user
@@ -15486,7 +15486,7 @@ Flatten.java: getNestedFields(): check *ToMany sf: posts , type = java.util.Coll
 Flatten.java: getNestedFields(): returning: [<com.reljicd.model.User: java.util.Collection roles>, <com.reljicd.model.User: java.util.Collection posts>]
 DIRRegionAnalyzer.java: constructDIR(): check nestedFields=[<com.reljicd.model.User: java.util.Collection roles>, <com.reljicd.model.User: java.util.Collection posts>]
 DIRRegionAnalyzer.java: constructDIR(): lookup (retAccp) = return.roles
-DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=User
+DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=com.reljicd.model.User
 Construct/Utils.java: bcelActualCollectionFieldType(): className= com.reljicd.model.User
  fieldName= roles
 Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private Long id [RuntimeVisibleAnnotations]
@@ -15532,7 +15532,7 @@ NRA.java: getCondFromManyToMany(): join condition = Equals
 | Alpha.role_id
 | Role.user_id
 DIRRegionAnalyzer.java: constructDIR(): lookup (retAccp) = return.posts
-DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=User
+DIRRegionAnalyzer.java: constructDIR(): baseEntity NAme=com.reljicd.model.User
 Construct/Utils.java: bcelActualCollectionFieldType(): className= com.reljicd.model.User
  fieldName= posts
 Construct/Utils.java: bcelActualCollectionFieldType(): bcel field = private Long id [RuntimeVisibleAnnotations]
@@ -61389,59 +61389,59 @@ Post fields =
 {}
 {}
  Node contains nested fields
-iduser_id
-fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post | v0.id = v1.user_id <=> v1 in v0.u_posts }u_Sel___ClassRef_com_r26.u_posts[fact { u_____NotEq_____NotEq_10 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe12.u_email) else (u___modelattribute__user_email)) }, sig u_Pi___Sel_____ClassRe21 in u_com_reljicd_model_User {}
-, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post | v0.id = v1.user_id <=> v1 in v0.u_posts }, sig u_Join___Sel_____Class3 in u_com_reljicd_repository_PostRepository {}
-fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_repository_PostRepository_c }, fact { u_Pi___Sel_____ClassRe18 = u_Sel___ClassRef_com_r17 }, fact { u_____NotEq_____NotEq_16 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe18.u_lastName) else (u___modelattribute__user_lastName)) }, fact { u_____NotEq_____NotEq_19 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe21.u_name) else (u___modelattribute__user_name)) }, fact { u_Pi___Sel_____ClassRe12 = u_Sel___ClassRef_com_r11 }, sig u_____NotEq_____NotEq_25 in univ {}, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_User {}
+u_idu_user_id
+fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : u_com_reljicd_model_Post | v0.u_id = v1.u_user_id <=> v1 in v0.u_posts }u_Sel___ClassRef_com_r31.u_posts[fact { u_____NotEq_____NotEq_10 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe12.u_email) else (u___modelattribute__user_email)) }, sig u_Pi___Sel_____ClassRe21 in u_com_reljicd_model_User {}
+, sig u_Join___Sel_____Class3 in u_com_reljicd_repository_PostRepository {}
+fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_repository_PostRepository_c }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : u_com_reljicd_model_Post | v0.u_id = v1.u_user_id <=> v1 in v0.u_posts }, fact { u_Pi___Sel_____ClassRe18 = u_Sel___ClassRef_com_r17 }, fact { u_____NotEq_____NotEq_16 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe18.u_lastName) else (u___modelattribute__user_lastName)) }, fact { u_____NotEq_____NotEq_19 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe21.u_name) else (u___modelattribute__user_name)) }, fact { u_Pi___Sel_____ClassRe12 = u_Sel___ClassRef_com_r11 }, sig u_____NotEq_____NotEq_25 in univ {}, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_User {}
 , sig u_____NotEq_____NotEq_19 in univ {}, fact { u_____NotEq_____NotEq_13 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe15.u_id) else (u___modelattribute__user_id)) }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (u_Join___Sel_____Class3) else (u___modelattribute__pager_posts)) }, fact { u_Pi___Sel_____ClassRe21 = u_Sel___ClassRef_com_r20 }, sig u_____NotEq_____NotEq_7 in univ {}, sig u_Pi___Sel_____ClassRe24 in u_com_reljicd_model_User {}
 , fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe9.u_active) else (u___modelattribute__user_active)) }, sig u_____NotEq_____NotEq_16 in univ {}, sig u_Pi___Sel_____ClassRe15 in u_com_reljicd_model_User {}
 , sig u_____NotEq_____NotEq_22 in univ {}, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, fact { u_Pi___Sel_____ClassRe15 = u_Sel___ClassRef_com_r14 }, sig u_Pi___Sel_____ClassRe12 in u_com_reljicd_model_User {}
 , fact { u_____NotEq_____NotEq_5 = ((u_Sel___ClassRef_com_r2 != none) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__user)) }, sig u_____NotEq_____NotEq_10 in univ {}, fact { u_____NotEq_____NotEq_22 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe24.u_password) else (u___modelattribute__user_password)) }, sig u_____NotEq_____NotEq_13 in univ {}, fact { u_Pi___Sel_____ClassRe24 = u_Sel___ClassRef_com_r23 }, sig u_____NotEq_____NotEq_1 in univ {}, sig u_Pi___Sel_____ClassRe18 in u_com_reljicd_model_User {}
 , sig u_____NotEq_____NotEq_5 in univ {}]
-user_idid
+u_user_idu_id
 u_com_reljicd_model_Postu_com_reljicd_model_UserEquals
 | Alpha.user_id
 | User.id
-role_iduser_id
+u_role_idu_user_id
 u_com_reljicd_model_Useru_com_reljicd_model_RoleEquals
 | Alpha.role_id
 | Role.user_id
-iduser_id
+u_idu_user_id
 u_com_reljicd_model_Useru_com_reljicd_model_PostEquals
 | Alpha.id
 | Post.user_id
-idpost_id
+u_idu_post_id
 u_com_reljicd_model_Postu_com_reljicd_model_CommentEquals
 | Alpha.id
 | Comment.post_id
-post_idid
+u_post_idu_id
 u_com_reljicd_model_Commentu_com_reljicd_model_PostEquals
 | Alpha.post_id
 | Post.id
-user_idid
+u_user_idu_id
 u_com_reljicd_model_Commentu_com_reljicd_model_UserEquals
 | Alpha.user_id
 | User.id
  Node contains nested fields
-role_iduser_id
-fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_User |  all v3 : u_com_reljicd_model_Role | v2.role_id = v3.user_id <=> v3 in v2.u_roles }u_Sel___ClassRef_com_r28.u_roles[fact { u_____NotEq_____NotEq_10 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe12.u_email) else (u___modelattribute__user_email)) }, sig u_Pi___Sel_____ClassRe21 in u_com_reljicd_model_User {}
-, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post | v0.id = v1.user_id <=> v1 in v0.u_posts }, sig u_Join___Sel_____Class3 in u_com_reljicd_repository_PostRepository {}
-fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_repository_PostRepository_c }, fact { u_Pi___Sel_____ClassRe18 = u_Sel___ClassRef_com_r17 }, fact { u_____NotEq_____NotEq_16 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe18.u_lastName) else (u___modelattribute__user_lastName)) }, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_User |  all v3 : u_com_reljicd_model_Post | v2.id = v3.user_id <=> v3 in v2.u_posts }, fact { u_____NotEq_____NotEq_19 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe21.u_name) else (u___modelattribute__user_name)) }, fact { u_Pi___Sel_____ClassRe12 = u_Sel___ClassRef_com_r11 }, sig u_____NotEq_____NotEq_25 in univ {}, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_User {}
-, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_Comment |  all v3 : u_com_reljicd_model_User | v2.user_id = v3.id <=> v3 in v2.u_user }, sig u_____NotEq_____NotEq_19 in univ {}, fact { u_____NotEq_____NotEq_13 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe15.u_id) else (u___modelattribute__user_id)) }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (u_Join___Sel_____Class3) else (u___modelattribute__pager_posts)) }, fact { u_Pi___Sel_____ClassRe21 = u_Sel___ClassRef_com_r20 }, sig u_____NotEq_____NotEq_7 in univ {}, sig u_Pi___Sel_____ClassRe24 in u_com_reljicd_model_User {}
-, fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe9.u_active) else (u___modelattribute__user_active)) }, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_Comment | v1.id = v2.post_id <=> v2 in v1.u_comments }, fact { u_____NotEq_____NotEq_25 = ((u_Sel___ClassRef_com_r2 != none) => (u_Sel___ClassRef_com_r26.u_posts) else (u___modelattribute__user_posts)) }, sig u_____NotEq_____NotEq_16 in univ {}, sig u_Pi___Sel_____ClassRe15 in u_com_reljicd_model_User {}
-, sig u_____NotEq_____NotEq_22 in univ {}, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, fact { u_Pi___Sel_____ClassRe15 = u_Sel___ClassRef_com_r14 }, sig u_Pi___Sel_____ClassRe12 in u_com_reljicd_model_User {}
-, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_User | v1.user_id = v2.id <=> v2 in v1.u_user }, fact { u_____NotEq_____NotEq_5 = ((u_Sel___ClassRef_com_r2 != none) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__user)) }, sig u_____NotEq_____NotEq_10 in univ {}, fact { u_____NotEq_____NotEq_22 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe24.u_password) else (u___modelattribute__user_password)) }, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_User |  all v3 : u_com_reljicd_model_Role | v2.role_id = v3.user_id <=> v3 in v2.u_roles }, sig u_____NotEq_____NotEq_13 in univ {}, fact { u_Pi___Sel_____ClassRe24 = u_Sel___ClassRef_com_r23 }, sig u_____NotEq_____NotEq_27 in univ {}, fact {  all v0 : u_com_reljicd_model_User |  all v1 : u_com_reljicd_model_Post |  all v2 : u_com_reljicd_model_Comment |  all v3 : u_com_reljicd_model_Post | v2.post_id = v3.id <=> v3 in v2.u_post }, sig u_____NotEq_____NotEq_1 in univ {}, sig u_Pi___Sel_____ClassRe18 in u_com_reljicd_model_User {}
+u_role_idu_user_id
+fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : v1.u_Sel___ClassRef_com_r48 |  all v3 : u_com_reljicd_model_Role | v2.u_role_id = v3.u_user_id <=> v3 in v2.u_roles }u_Sel___ClassRef_com_r48.u_roles[fact { u_____NotEq_____NotEq_10 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe12.u_email) else (u___modelattribute__user_email)) }, sig u_Pi___Sel_____ClassRe21 in u_com_reljicd_model_User {}
+, sig u_Join___Sel_____Class3 in u_com_reljicd_repository_PostRepository {}
+fact { u_Join___Sel_____Class3 = u_Sel___ClassRef_com_r4.u_com_reljicd_repository_PostRepository_c }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : u_com_reljicd_model_User | v1.u_user_id = v2.u_id <=> v2 in v1.u_user }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : u_com_reljicd_model_Post | v0.u_id = v1.u_user_id <=> v1 in v0.u_posts }, fact { u_Pi___Sel_____ClassRe18 = u_Sel___ClassRef_com_r17 }, fact { u_____NotEq_____NotEq_16 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe18.u_lastName) else (u___modelattribute__user_lastName)) }, fact { u_____NotEq_____NotEq_19 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe21.u_name) else (u___modelattribute__user_name)) }, fact { u_Pi___Sel_____ClassRe12 = u_Sel___ClassRef_com_r11 }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : v1.u_comments |  all v3 : u_com_reljicd_model_Post | v2.u_post_id = v3.u_id <=> v3 in v2.u_post }, sig u_____NotEq_____NotEq_25 in univ {}, sig u_Pi___Sel_____ClassRe9 in u_com_reljicd_model_User {}
+, sig u_____NotEq_____NotEq_19 in univ {}, fact { u_____NotEq_____NotEq_13 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe15.u_id) else (u___modelattribute__user_id)) }, fact { u_____NotEq_____NotEq_1 = ((u_Sel___ClassRef_com_r2 != none) => (u_Join___Sel_____Class3) else (u___modelattribute__pager_posts)) }, fact { u_Pi___Sel_____ClassRe21 = u_Sel___ClassRef_com_r20 }, sig u_____NotEq_____NotEq_7 in univ {}, sig u_Pi___Sel_____ClassRe24 in u_com_reljicd_model_User {}
+, fact { u_____NotEq_____NotEq_25 = ((u_Sel___ClassRef_com_r2 != none) => (u_Sel___ClassRef_com_r31.u_posts) else (u___modelattribute__user_posts)) }, fact { u_____NotEq_____NotEq_7 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe9.u_active) else (u___modelattribute__user_active)) }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : v1.u_Sel___ClassRef_com_r48 |  all v3 : u_com_reljicd_model_Role | v2.u_role_id = v3.u_user_id <=> v3 in v2.u_roles }, sig u_____NotEq_____NotEq_16 in univ {}, sig u_Pi___Sel_____ClassRe15 in u_com_reljicd_model_User {}
+, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : v1.u_user |  all v3 : u_com_reljicd_model_Role | v2.u_role_id = v3.u_user_id <=> v3 in v2.u_roles }, sig u_____NotEq_____NotEq_46 in univ {}, sig u_____NotEq_____NotEq_22 in univ {}, fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_r8 }, fact { u_Pi___Sel_____ClassRe15 = u_Sel___ClassRef_com_r14 }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : v1.u_user |  all v3 : u_com_reljicd_model_Post | v2.u_id = v3.u_user_id <=> v3 in v2.u_posts }, sig u_Pi___Sel_____ClassRe12 in u_com_reljicd_model_User {}
+, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : v1.u_comments |  all v3 : u_com_reljicd_model_User | v2.u_user_id = v3.u_id <=> v3 in v2.u_user }, fact {  all v0 : u_Sel___ClassRef_com_r31 |  all v1 : v0.u_posts |  all v2 : u_com_reljicd_model_Comment | v1.u_id = v2.u_post_id <=> v2 in v1.u_comments }, fact { u_____NotEq_____NotEq_5 = ((u_Sel___ClassRef_com_r2 != none) => (u_Sel___ClassRef_com_r6) else (u___modelattribute__user)) }, sig u_____NotEq_____NotEq_10 in univ {}, fact { u_____NotEq_____NotEq_22 = ((u_Sel___ClassRef_com_r2 != none) => (u_Pi___Sel_____ClassRe24.u_password) else (u___modelattribute__user_password)) }, sig u_____NotEq_____NotEq_13 in univ {}, fact { u_Pi___Sel_____ClassRe24 = u_Sel___ClassRef_com_r23 }, sig u_____NotEq_____NotEq_1 in univ {}, sig u_Pi___Sel_____ClassRe18 in u_com_reljicd_model_User {}
 , sig u_____NotEq_____NotEq_5 in univ {}]
-user_idrole_id
+u_user_idu_role_id
 u_com_reljicd_model_Roleu_com_reljicd_model_UserEquals
 | Alpha.user_id
 | User.role_id
-role_iduser_id
+u_role_idu_user_id
 u_com_reljicd_model_Useru_com_reljicd_model_RoleEquals
 | Alpha.role_id
 | Role.user_id
-iduser_id
+u_idu_user_id
 u_com_reljicd_model_Useru_com_reljicd_model_PostEquals
 | Alpha.id
 | Post.user_id
-Time elapsed: 2.136 seconds
+Time elapsed: 2.384 seconds

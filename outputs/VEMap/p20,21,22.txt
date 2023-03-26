@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: org.springframework.samples.petclinic.owner.OwnerController: java.lang.String processFindForm(org.springframework.samples.petclinic.owner.Owner,org.springframework.validation.BindingResult,java.util.Map)
-github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Desktop/current/dbridge_loop
-starttime, test: 1679669955306
+github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
+starttime, test: 1679721155123
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: org.springframework.web.bind.annotation.PostMapping is a phantom class!
@@ -278,8 +278,8 @@ ArithAdd
 
 {<list>=61, <rel>=71, <repo>=41, <cond>=31, <nop>=46, <clm>=73, <init_val>=76, <join_right>=45, <itr>=78, <clmagg>=75, <receiver>=54, <aggvar>=68, <elseval>=34, <col1>=5, <list2>=24, <col2>=6, <list1>=21, <coll>=77}
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/akash/Desktop/current/dbridge_loop/lib/eqsql.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/akash/Desktop/current/dbridge_loop/lib/soot-trunk-1.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/akash/Study/3rd%20sem/Project/current%20use/NRAandLoops/lib/eqsql.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/akash/Study/3rd%20sem/Project/current%20use/NRAandLoops/lib/soot-trunk-1.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 ServiceAllocTransform.java: internalTransform(): methodsig: <org.springframework.samples.petclinic.owner.OwnerController: java.lang.String processFindForm(org.springframework.samples.petclinic.owner.Owner,org.springframework.validation.BindingResult,java.util.Map)>
@@ -27102,20 +27102,20 @@ PetType fields =
 {}
 {}
  Node contains nested fields
-u_idu_ownerId
+idownerId
 u_Owneru_org_springframework_samples_petclinic_owner_PetEquals
 | Alpha.id
 | Pet.ownerId
-u_typeIdu_id
+typeIdid
 u_org_springframework_samples_petclinic_owner_Petu_org_springframework_samples_petclinic_owner_PetTypeEquals
 | Alpha.typeId
 | PetType.id
-u_ownerIdu_id
+ownerIdid
 u_org_springframework_samples_petclinic_owner_Petu_org_springframework_samples_petclinic_owner_OwnerEquals
 | Alpha.ownerId
 | Owner.id
-u_idu_petId
+idpetId
 u_org_springframework_samples_petclinic_owner_Petu_org_springframework_samples_petclinic_visit_VisitEquals
 | Alpha.id
 | Visit.petId
-Time elapsed: 1.266 seconds
+Time elapsed: 1.622 seconds
