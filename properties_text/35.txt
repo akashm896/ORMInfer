@@ -1,0 +1,5 @@
+sig matchingOwner in u_org_springframework_samples_petclinic_owner_Owner {}
+
+fact { all y:u_org_springframework_samples_petclinic_owner_Owner | y.u_id = u_ownerId <=> y in matchingOwner }
+assert r7 {some matchingOwner => matchingOwner.u_id = u_ownerId}
+check r7 for 20

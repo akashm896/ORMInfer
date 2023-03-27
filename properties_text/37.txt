@@ -1,0 +1,2 @@
+assert r11 {mu___modelattribute__pet_owner_firstName = u_owner_firstName and mu___modelattribute__pet_owner_lastName = u_owner_lastName}
+check r11 for 20

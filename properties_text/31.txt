@@ -1,0 +1,2 @@
+assert a31 { mu_this_visits = u_this_visits }
+check a31 for 20

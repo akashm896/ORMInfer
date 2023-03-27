@@ -1,0 +1,5 @@
+assert r2p1part2 {(u_MethodWontHandleOp8 = u_0) =>
+  (some p:  mu__r0_postRepository | p.u_id = u_post_id and p.u_title =
+  u_post_title and p.u_body = u_post_body and p.u_createdate =
+  u_post_createDate )}
+check r2p1part2 for 20

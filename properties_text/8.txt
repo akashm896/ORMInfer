@@ -1,0 +1,7 @@
+sig currentUser in u_com_reljicd_model_User {}
+fact { all y:u_com_reljicd_model_User | 
+  y.u_username = u_principalusername <=> y in currentUser }
+
+assert rt2p1part {(some currentUser) => 
+  (mu___modelattribute__post_user_id = currentUser.u_id)}
+check rt2p1part for 20

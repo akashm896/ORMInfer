@@ -1,0 +1,3 @@
+assert st5p2 {(u_self = NullNode) => mu___modelattribute__comments = u_com_yyqian_imagine_repository_CommentRepository}
+check st5p2 for 20
+

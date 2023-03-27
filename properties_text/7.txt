@@ -1,0 +1,2 @@
+assert a7 {mu_this_employeeServiceImpl_employeeRepository = u_this_employeeServiceImpl_employeeRepository}
+check a7 for 20

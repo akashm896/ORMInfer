@@ -1,0 +1,11 @@
+sig matchingUser in u_com_reljicd_model_User {}
+fact { all y:u_com_reljicd_model_User |
+  y.u_username = u_username <=> y in matchingUser}
+assert a9 {(all p:u_com_reljicd_repository_PostRepository | (p in
+matchingUser.u_com_reljicd_repository_PostRepository_c)
+=> (p in mu___modelattribute__pager_posts))
+and ((some matchingUser) => (all p :
+mu___modelattribute__pager_posts | p in
+matchingUser.u_com_reljicd_repository_PostRepository_c))}
+
+check a9 for 20

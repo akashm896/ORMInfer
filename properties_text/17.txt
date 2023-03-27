@@ -1,0 +1,2 @@
+assert all_orders_displ {all o : u_com_shakeel_model_CustomerOrder | o in mu___modelattribute__orders}
+check all_orders_displ for 20

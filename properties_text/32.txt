@@ -1,0 +1,2 @@
+assert a32 { mu_this_owners = u_this_owners}
+check a32 for 20

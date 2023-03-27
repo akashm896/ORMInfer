@@ -1,0 +1,3 @@
+assert s7 {some mu_this_postServiceImpl_postRepository}
+check s7 for 20
+

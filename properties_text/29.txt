@@ -1,0 +1,10 @@
+sig toSubtract in u_this_pets {}
+fact {all y: u_this_pets | y in toSubtract iff y.u_id = u_pet_id}
+assert s11 {(u_MethodWontHandleOp8 = u_0) =>
+  (one new: u_ts_this_pets | mu_this_pets = u_this_pets - toSubtract + new
+       and
+       new.u_id = u_pet_id and new.u_name = u_pet_name and 
+       new.u_birthdate = u_pet_birthDate)}
+
+
+check s11 for 20

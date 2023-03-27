@@ -1,0 +1,5 @@
+sig emptystr in FieldData{}
+
+assert atwo {all e : mu_this_employeeServiceImpl_employeeRepository |
+  (e.u_id = u_employee_id) =>  (e.u_firstname != emptystr) }
+check atwo for 20

@@ -1,0 +1,2 @@
+assert r12 {some o: u_Owner | o.u_firstname = u_owner_firstName and o.u_lastname = u_owner_lastName}
+check r12 for 20

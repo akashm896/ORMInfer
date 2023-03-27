@@ -1,0 +1,3 @@
+assert st1p1i {(u_site = NullNode) => all p : mu___modelattribute__posts | p in u_com_yyqian_imagine_repository_PostRepository}
+check st1p1i for 20
+

@@ -1,0 +1,5 @@
+assert s4 {(u_MethodWontHandleOp12 = u_0 and
+u_MethodWontHandleOp2 != u_1) => all o :
+mu___modelattribute__selections | o in u_Owner}
+
+check s4 for 20

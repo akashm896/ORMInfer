@@ -1,0 +1,2 @@
+assert h1 {all b : u_com_bookstore_domain_Book | b in mu___modelattribute__bookList}
+check h1 for 20

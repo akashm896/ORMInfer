@@ -1,0 +1,2 @@
+assert st4p1 {(u_MethodWontHandleOp8 = u_0) => some mu__r0_postRepository}
+check st4p1 for 20

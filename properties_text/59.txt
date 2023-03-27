@@ -1,0 +1,7 @@
+one sig currentUser in u_com_bookstore_domain_User {}
+fact {all u : u_com_bookstore_domain_User | u.u_username = u_principalusername <=> u = currentUser }
+
+one sig toBeDeletedShipping in u_this_userShippingRepository {}
+fact {all s : u_this_userShippingRepository | s.u_id = u_userShippingId <=> s in toBeDeletedShipping}
+assert h10 {((currentUser.u_id = toBeDeletedShipping.u_com_bookstore_domain_User_c.u_id) => mu__r7_userShippingRepository= u_this_userShippingRepository - toBeDeletedShipping)}
+check h10 for 20

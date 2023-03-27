@@ -1,0 +1,3 @@
+//OwnerController::showOwner
+assert s9 {all v : mu___modelattribute__owner_pets.u_visits | v.u_id = u_org_springframework_samples_petclinic_visit_VisitRepository.u_id}
+check s9 for 20
