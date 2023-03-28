@@ -1,7 +1,7 @@
 one sig selectedbook in u_com_bookstore_domain_Book {}
 fact {all b : u_com_bookstore_domain_Book | b.u_id = u_id <=> b in selectedbook}
 assert h2 { mu___modelattribute__book_ourPrice = selectedbook.u_ourPrice
-        and mu___modelattribute__book_bookToCartItemsList = selectedbook.u_bookToCartItemsList
+        and mu___modelattribute__book_bookToCartItemsList = selectedbook.u_com_bookstore_domain_BookToCartItem_c
         and mu___modelattribute__book_title = selectedbook.u_title
         and mu___modelattribute__book_isbn = selectedbook.u_isbn
         and mu___modelattribute__book_id = selectedbook.u_id

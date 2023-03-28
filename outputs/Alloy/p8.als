@@ -1,237 +1,149 @@
-//this.voteServiceImpl.postServiceImpl.postRepository : mu_this_voteServiceImpl_postServiceImpl_postRepository
+//userShippingListRepo : mu_userShippingListRepo
 sig FieldData {}
-one sig u_id in FieldData {}
-one sig u_MethodWontHandleOp49 in FieldData {}
-one sig u__r0_postServiceImpl_postRepository in FieldData {}
-one sig u_post_updatedAt in FieldData {}
-one sig u_post_createdAt in FieldData {}
-sig u_ts_this_voteServiceImpl_postServiceImpl_postRepository {
-u_downvotecount : FieldData,
-u_createdat : FieldData,
-u_content : FieldData,
+one sig u_1 extends FieldData {}
+one sig NullNode extends FieldData {}
+one sig u_userShipping_userShippingName in FieldData {}
+one sig u_userShipping_userShippingZipcode in FieldData {}
+one sig u_userShipping_userShippingState in FieldData {}
+one sig u_userShipping_userShippingCountry in FieldData {}
+one sig u_userShipping_id in FieldData {}
+one sig u_userShipping_userShippingStreet1 in FieldData {}
+one sig u_userShipping_userShippingStreet2 in FieldData {}
+one sig u_userShipping_userShippingCity in FieldData {}
+one sig u_principalusername in FieldData {}
+sig u_ts_userShippingListRepo {
+u_com_bookstore_domain_security_UserRole_c : u_com_bookstore_domain_security_UserRole,
+}
+sig u_com_bookstore_domain_UserShipping {
+u_userShippingCity : FieldData,
+u_com_bookstore_domain_User_c : u_com_bookstore_domain_User,
+u_usershippingdefault : FieldData,
+u_userShippingZipcode : FieldData,
+u_userShippingStreet2 : FieldData,
+u_userShippingStreet1 : FieldData,
+u_usershippingcountry : FieldData,
+u_usershippingzipcode : FieldData,
+u_usershippingstreet1 : FieldData,
+u_usershippingstate : FieldData,
 u_id : FieldData,
-u_commentcount : FieldData,
-u_point : FieldData,
-u_version : FieldData,
-u_site : FieldData,
-u_upvotecount : FieldData,
-u_title : FieldData,
-u_updatedat : FieldData,
+u_user_id : FieldData,
+u_com_bookstore_domain_ShoppingCart_c : u_com_bookstore_domain_ShoppingCart,
+u_userShippingState : FieldData,
+u_usershippingstreet2 : FieldData,
+u_usershippingname : FieldData,
+u_userShippingCountry : FieldData,
+u_userShippingDefault : FieldData,
+u_userShippingName : FieldData,
+u_usershippingcity : FieldData,
 }
-sig u_com_yyqian_imagine_repository_PostRepository {
-u_downVoteCount : FieldData,
-u_content : FieldData,
+sig u_com_bookstore_domain_User {
+u_firstName : FieldData,
+u_com_bookstore_domain_Order_c : u_com_bookstore_domain_Order,
+u_email : FieldData,
+u_com_bookstore_domain_UserShipping_c : u_com_bookstore_domain_UserShipping,
+u_enabled : FieldData,
 u_id : FieldData,
-u_upVoteCount : FieldData,
-u_point : FieldData,
-u_version : FieldData,
-u_commentCount : FieldData,
-u_site : FieldData,
-u_title : FieldData,
+u_phone : FieldData,
+u_com_bookstore_domain_ShoppingCart_c : u_com_bookstore_domain_ShoppingCart,
+u_com_bookstore_domain_UserPayment_c : u_com_bookstore_domain_UserPayment,
+u_password : FieldData,
+u_lastName : FieldData,
+u_com_bookstore_domain_security_UserRole_c : u_com_bookstore_domain_security_UserRole,
+u_username : FieldData,
 }
-sig u_this_voteServiceImpl_postServiceImpl_postRepository in u_ts_this_voteServiceImpl_postServiceImpl_postRepository {
+sig u_com_bookstore_domain_ShoppingCart {
+u_com_bookstore_domain_User_c : u_com_bookstore_domain_User,
+u_id : FieldData,
+u_userId : FieldData,
+u_GrandTotal : FieldData,
 }
-sig u_Sel___ClassRef_com_y16 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y16[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
+sig u_userShippingListRepo in u_ts_userShippingListRepo {
 }
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y16[y] <=> y in u_Sel___ClassRef_com_y16 }
-sig u_Sel___ClassRef_com_y39 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y39[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
+sig u_com_bookstore_domain_security_UserRole {
+u_userRoleId : FieldData,
+u_user_id : FieldData,
+u_com_bookstore_domain_UserPayment_c : u_com_bookstore_domain_UserPayment,
 }
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y39[y] <=> y in u_Sel___ClassRef_com_y39 }
-sig u_Sel___ClassRef_com_y18 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y18[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
+sig u_com_bookstore_domain_Order {
+u_com_bookstore_domain_UserShipping_c : u_com_bookstore_domain_UserShipping,
+u_id : FieldData,
+u_shippingDate : FieldData,
+u_user_id : FieldData,
+u_orederStatus : FieldData,
+u_shippingMethod : FieldData,
+u_orderTotal : FieldData,
+u_orderDate : FieldData,
 }
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y18[y] <=> y in u_Sel___ClassRef_com_y18 }
-sig u_Sel___ClassRef_com_y22 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y22[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
+sig u_com_bookstore_domain_UserPayment {
+u_com_bookstore_domain_Order_c : u_com_bookstore_domain_Order,
+u_cardName : FieldData,
+u_expiryMonth : FieldData,
+u_expiryYear : FieldData,
+u_holderName : FieldData,
+u_id : FieldData,
+u_user_id : FieldData,
+u_cardNumber : FieldData,
+u_defaultPayment : FieldData,
+u_cvc : FieldData,
+u_type : FieldData,
 }
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y22[y] <=> y in u_Sel___ClassRef_com_y22 }
-sig u_Sel___ClassRef_com_y4 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y4[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
+sig u_Sel___ClassRef_com_b3 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b3[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
 }
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y4[y] <=> y in u_Sel___ClassRef_com_y4 }
-sig u_Sel___ClassRef_com_y20 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y20[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b3[y] <=> y in u_Sel___ClassRef_com_b3 }
+sig u_Sel___ClassRef_com_b20 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b20[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
 }
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y20[y] <=> y in u_Sel___ClassRef_com_y20 }
-sig u_Sel___ClassRef_com_y31 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y31[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y31[y] <=> y in u_Sel___ClassRef_com_y31 }
-sig u_Sel___ClassRef_com_y41 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y41[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y41[y] <=> y in u_Sel___ClassRef_com_y41 }
-sig u_Sel___ClassRef_com_y10 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y10[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y10[y] <=> y in u_Sel___ClassRef_com_y10 }
-sig u_Sel___ClassRef_com_y45 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y45[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y45[y] <=> y in u_Sel___ClassRef_com_y45 }
-sig u_Sel___Cartesian_____2 in u_Cartesian___this_vot3 {}
-pred meets_selection_criteria_of_u_Sel___Cartesian_____2[x: u_Cartesian___this_vot3] {
-x.u_id = u_Pi___Sel_____ClassRe5.u_id
-}
-fact { all y:u_Cartesian___this_vot3 | meets_selection_criteria_of_u_Sel___Cartesian_____2[y] <=> y in u_Sel___Cartesian_____2 }
-sig u_Sel___ClassRef_com_y33 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y33[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y33[y] <=> y in u_Sel___ClassRef_com_y33 }
-sig u_Sel___ClassRef_com_y8 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y8[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y8[y] <=> y in u_Sel___ClassRef_com_y8 }
-sig u_Sel___ClassRef_com_y12 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y12[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y12[y] <=> y in u_Sel___ClassRef_com_y12 }
-sig u_Sel___ClassRef_com_y14 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y14[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y14[y] <=> y in u_Sel___ClassRef_com_y14 }
-sig u_Sel___ClassRef_com_y27 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y27[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y27[y] <=> y in u_Sel___ClassRef_com_y27 }
-sig u_Sel___Cartesian_____26 in u_Cartesian___this_vot3 {}
-pred meets_selection_criteria_of_u_Sel___Cartesian_____26[x: u_Cartesian___this_vot3] {
-x.u_id = u_Pi___Sel_____ClassRe28.u_id
-}
-fact { all y:u_Cartesian___this_vot3 | meets_selection_criteria_of_u_Sel___Cartesian_____26[y] <=> y in u_Sel___Cartesian_____26 }
-sig u_Sel___ClassRef_com_y37 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y37[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y37[y] <=> y in u_Sel___ClassRef_com_y37 }
-sig u_Sel___ClassRef_com_y35 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y35[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y35[y] <=> y in u_Sel___ClassRef_com_y35 }
-sig u_Sel___ClassRef_com_y43 in u_com_yyqian_imagine_repository_PostRepository {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_y43[x: u_com_yyqian_imagine_repository_PostRepository] {
-x.u_id = u_id
-}
-fact { all y:u_com_yyqian_imagine_repository_PostRepository | meets_selection_criteria_of_u_Sel___ClassRef_com_y43[y] <=> y in u_Sel___ClassRef_com_y43 }
-fact { u_Pi___Sel_____ClassRe44 = u_Sel___ClassRef_com_y43 }
-fact { u_Pi___Sel_____ClassRe11 = u_Sel___ClassRef_com_y10 }
-sig u_Pi___Sel_____ClassRe36 in u_com_yyqian_imagine_repository_PostRepository {}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b20[y] <=> y in u_Sel___ClassRef_com_b20 }
+fact {all v0 : u_Join___Sel_____Class2, v1 : v0.u_com_bookstore_domain_User_c, v2 : u_com_bookstore_domain_security_UserRole | v1.u_id = v2.u_user_id <=> v2 in v1.u_com_bookstore_domain_security_UserRole_c}
+fact {all v0 : u_Join___Sel_____Class2, v1 : u_com_bookstore_domain_User | v0.u_user_id = v1.u_id <=> v1 in v0.u_com_bookstore_domain_User_c}
+fact {all v0 : u_Join___Sel_____Class2, v1 : v0.u_com_bookstore_domain_User_c, v2 : u_com_bookstore_domain_UserShipping | v1.u_id = v2.u_user_id <=> v2 in v1.u_com_bookstore_domain_UserShipping_c}
+sig u_User_userShippingLis10 in u_com_bookstore_domain_UserShipping {}
 
-fact { u_Pi___Sel_____ClassRe9 = u_Sel___ClassRef_com_y8 }
-sig u_UnionOp___this_voteS7 in u_this_voteServiceImpl_postServiceImpl_postRepository + u_List___Pi_____Sel___6 {}
-fact { u_UnionOp___this_voteS7 = u_this_voteServiceImpl_postServiceImpl_postRepository + u_List___Pi_____Sel___6 }
+fact {all v0 : u_Join___Sel_____Class2, v1 : v0.u_com_bookstore_domain_User_c, v2 : u_com_bookstore_domain_UserPayment | v1.u_id = v2.u_user_id <=> v2 in v1.u_com_bookstore_domain_UserPayment_c}
+one sig u_List___userShipping_17 in u_com_bookstore_domain_UserShipping {}
+fact { u_List___userShipping_17.u_id = u_userShipping_id }
+fact { u_List___userShipping_17.u_usershippingname = u_userShipping_userShippingName }
+fact { u_List___userShipping_17.u_usershippingstreet1 = u_userShipping_userShippingStreet1 }
+fact { u_List___userShipping_17.u_usershippingstreet2 = u_userShipping_userShippingStreet2 }
+fact { u_List___userShipping_17.u_usershippingcity = u_userShipping_userShippingCity }
+fact { u_List___userShipping_17.u_usershippingstate = u_userShipping_userShippingState }
+fact { u_List___userShipping_17.u_usershippingcountry = u_userShipping_userShippingCountry }
+fact { u_List___userShipping_17.u_usershippingzipcode = u_userShipping_userShippingZipcode }
+fact { u_List___userShipping_17.u_usershippingdefault = u_1 }
 
-fact { u_Pi___Sel_____ClassRe21 = u_Sel___ClassRef_com_y20 }
-one sig u_List___Pi_____Sel___29 in u_ts_this_voteServiceImpl_postServiceImpl_postRepository {}
-fact { u_List___Pi_____Sel___29.u_title = u_Pi___Sel_____ClassRe32.u_title }
-fact { u_List___Pi_____Sel___29.u_commentcount = u_Pi___Sel_____ClassRe34.u_commentCount }
-fact { u_List___Pi_____Sel___29.u_site = u_Pi___Sel_____ClassRe36.u_site }
-fact { u_List___Pi_____Sel___29.u_content = u_Pi___Sel_____ClassRe38.u_content }
-fact { u_List___Pi_____Sel___29.u_upvotecount = u_Pi___Sel_____ClassRe40.u_upVoteCount }
-fact { u_List___Pi_____Sel___29.u_downvotecount = u_Pi___Sel_____ClassRe42.u_downVoteCount + 1 }
-fact { u_List___Pi_____Sel___29.u_point = u_Pi___Sel_____ClassRe44.u_point }
-fact { u_List___Pi_____Sel___29.u_id = u_Pi___Sel_____ClassRe28.u_id }
-fact { u_List___Pi_____Sel___29.u_version = u_Pi___Sel_____ClassRe46.u_version }
-fact { u_List___Pi_____Sel___29.u_createdat = u_post_createdAt }
-fact { u_List___Pi_____Sel___29.u_updatedat = u_post_updatedAt }
+sig u_UnionOp___User_userS18 in u_User_userShippingLis4 + u_List___userShipping_17 {}
+fact { u_UnionOp___User_userS18 = u_User_userShippingLis4 + u_List___userShipping_17 }
 
-fact { u_Pi___Sel_____ClassRe17 = u_Sel___ClassRef_com_y16 }
-fact { u_Pi___Sel_____ClassRe36 = u_Sel___ClassRef_com_y35 }
-sig u_Pi___Sel_____ClassRe5 in u_com_yyqian_imagine_repository_PostRepository {}
+fact {all v0 : u_Join___Sel_____Class2, v1 : v0.u_com_bookstore_domain_User_c, v2 : u_com_bookstore_domain_ShoppingCart | v1.u_id = v2.u_userId <=> v2 in v1.u_com_bookstore_domain_ShoppingCart_c}
+sig u_UserShipping_user_Pi6 in u_com_bookstore_domain_User {}
 
-sig u_Pi___Sel_____ClassRe32 in u_com_yyqian_imagine_repository_PostRepository {}
+sig u_User_userOrderList_P12 in u_com_bookstore_domain_Order {}
 
-sig u_Pi___Sel_____ClassRe13 in u_com_yyqian_imagine_repository_PostRepository {}
+sig u_UnionOp___Relational22 in u_RelationalMinus___us21 + u_UnionOp___User_userS18 {}
+fact { u_UnionOp___Relational22 = u_RelationalMinus___us21 + u_UnionOp___User_userS18 }
 
-sig u_Pi___Sel_____ClassRe28 in u_com_yyqian_imagine_repository_PostRepository {}
+sig u_User_userRoles_Pi___16 in u_com_bookstore_domain_security_UserRole {}
 
-sig u_Pi___Sel_____ClassRe46 in u_com_yyqian_imagine_repository_PostRepository {}
+sig u_Join___Sel_____Class19 in u_com_bookstore_domain_UserShipping {}
+fact { u_Join___Sel_____Class19 = u_Sel___ClassRef_com_b20.u_com_bookstore_domain_UserShipping_c }
 
-one sig u_List___Pi_____Sel___6 in u_ts_this_voteServiceImpl_postServiceImpl_postRepository {}
-fact { u_List___Pi_____Sel___6.u_title = u_Pi___Sel_____ClassRe9.u_title }
-fact { u_List___Pi_____Sel___6.u_commentcount = u_Pi___Sel_____ClassRe11.u_commentCount }
-fact { u_List___Pi_____Sel___6.u_site = u_Pi___Sel_____ClassRe13.u_site }
-fact { u_List___Pi_____Sel___6.u_content = u_Pi___Sel_____ClassRe15.u_content }
-fact { u_List___Pi_____Sel___6.u_upvotecount = u_Pi___Sel_____ClassRe17.u_upVoteCount + 1 }
-fact { u_List___Pi_____Sel___6.u_downvotecount = u_Pi___Sel_____ClassRe19.u_downVoteCount }
-fact { u_List___Pi_____Sel___6.u_point = u_Pi___Sel_____ClassRe21.u_point }
-fact { u_List___Pi_____Sel___6.u_id = u_Pi___Sel_____ClassRe5.u_id }
-fact { u_List___Pi_____Sel___6.u_version = u_Pi___Sel_____ClassRe23.u_version }
-fact { u_List___Pi_____Sel___6.u_createdat = u_post_createdAt }
-fact { u_List___Pi_____Sel___6.u_updatedat = u_post_updatedAt }
+sig u_User_shoppingCart_Pi8 in u_com_bookstore_domain_ShoppingCart {}
 
-sig u_Pi___Sel_____ClassRe34 in u_com_yyqian_imagine_repository_PostRepository {}
+fact {all v0 : u_Join___Sel_____Class2, v1 : v0.u_com_bookstore_domain_User_c, v2 : u_com_bookstore_domain_Order | v1.u_id = v2.u_user_id <=> v2 in v1.u_com_bookstore_domain_Order_c}
+sig u_User_userShippingLis4 in u_com_bookstore_domain_UserShipping {}
 
-fact { u_Pi___Sel_____ClassRe13 = u_Sel___ClassRef_com_y12 }
-sig u_Pi___Sel_____ClassRe19 in u_com_yyqian_imagine_repository_PostRepository {}
+sig u_RelationalMinus___us21 in u_userShippingListRepo {}
+fact { u_RelationalMinus___us21 = u_userShippingListRepo - u_Join___Sel_____Class19 }
+sig u_User_userPaymentList14 in u_com_bookstore_domain_UserPayment {}
 
-fact { u_Pi___Sel_____ClassRe46 = u_Sel___ClassRef_com_y45 }
-sig u_RelationalMinus___Ca24 in u_this_voteServiceImpl_postServiceImpl_postRepository {}
-fact { u_RelationalMinus___Ca24 = u_this_voteServiceImpl_postServiceImpl_postRepository - u_Sel___Cartesian_____2 }
-sig u_Cartesian___this_vot3 in u_this_voteServiceImpl_postServiceImpl_postRepository {}
-fact { u_Cartesian___this_vot3 = u_this_voteServiceImpl_postServiceImpl_postRepository }
-
-fact { u_Pi___Sel_____ClassRe32 = u_Sel___ClassRef_com_y31 }
-sig u_UnionOp___Relational25 in u_RelationalMinus___Ca24 + u_List___Pi_____Sel___6 {}
-fact { u_UnionOp___Relational25 = u_RelationalMinus___Ca24 + u_List___Pi_____Sel___6 }
-
-fact { u_Pi___Sel_____ClassRe28 = u_Sel___ClassRef_com_y27 }
-sig u_Pi___Sel_____ClassRe40 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_Pi___Sel_____ClassRe17 in u_com_yyqian_imagine_repository_PostRepository {}
-
-fact { u_Pi___Sel_____ClassRe23 = u_Sel___ClassRef_com_y22 }
-fact { u_Pi___Sel_____ClassRe40 = u_Sel___ClassRef_com_y39 }
-sig u_Pi___Sel_____ClassRe9 in u_com_yyqian_imagine_repository_PostRepository {}
-
-fact { u_Pi___Sel_____ClassRe19 = u_Sel___ClassRef_com_y18 }
-fact { u_____NotEq_____NotEq_1 = ((u_MethodWontHandleOp49 != none) => (u__r0_postServiceImpl_postRepository) else (((1 > 0) => (((u_Sel___Cartesian_____2 = none) => (u_UnionOp___this_voteS7) else (u_UnionOp___Relational25))) else (((1 >= 0) => (((u_Sel___Cartesian_____26 = none) => (u_UnionOp___this_voteS30) else (u_UnionOp___Relational48))) else (u__r0_postServiceImpl_postRepository)))))) }
-fact { u_Pi___Sel_____ClassRe42 = u_Sel___ClassRef_com_y41 }
-sig u_Pi___Sel_____ClassRe11 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_Pi___Sel_____ClassRe23 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_Pi___Sel_____ClassRe38 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_Pi___Sel_____ClassRe44 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_UnionOp___Relational48 in u_RelationalMinus___Ca47 + u_List___Pi_____Sel___29 {}
-fact { u_UnionOp___Relational48 = u_RelationalMinus___Ca47 + u_List___Pi_____Sel___29 }
-
-fact { u_Pi___Sel_____ClassRe38 = u_Sel___ClassRef_com_y37 }
-sig u_RelationalMinus___Ca47 in u_this_voteServiceImpl_postServiceImpl_postRepository {}
-fact { u_RelationalMinus___Ca47 = u_this_voteServiceImpl_postServiceImpl_postRepository - u_Sel___Cartesian_____26 }
-fact { u_Pi___Sel_____ClassRe15 = u_Sel___ClassRef_com_y14 }
-sig u_Pi___Sel_____ClassRe15 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_Pi___Sel_____ClassRe21 in u_com_yyqian_imagine_repository_PostRepository {}
-
-fact { u_Pi___Sel_____ClassRe34 = u_Sel___ClassRef_com_y33 }
-sig u_Pi___Sel_____ClassRe42 in u_com_yyqian_imagine_repository_PostRepository {}
-
-sig u_____NotEq_____NotEq_1 in univ {}
-fact { u_Pi___Sel_____ClassRe5 = u_Sel___ClassRef_com_y4 }
-sig u_UnionOp___this_voteS30 in u_this_voteServiceImpl_postServiceImpl_postRepository + u_List___Pi_____Sel___29 {}
-fact { u_UnionOp___this_voteS30 = u_this_voteServiceImpl_postServiceImpl_postRepository + u_List___Pi_____Sel___29 }
-
-sig mu_this_voteServiceImpl_postServiceImpl_postRepository in univ {}
-fact { mu_this_voteServiceImpl_postServiceImpl_postRepository = u_____NotEq_____NotEq_1 }
+sig u_Join___Sel_____Class2 in u_com_bookstore_domain_UserShipping {}
+fact { u_Join___Sel_____Class2 = u_Sel___ClassRef_com_b3.u_com_bookstore_domain_UserShipping_c }
+fact { all v0 : u_Sel___ClassRef_com_b3, v1 : u_com_bookstore_domain_UserShipping | v0.u_id = v1.u_user_id <=> v1 in v0.u_com_bookstore_domain_UserShipping_c}
+sig u_____Equals_____Sel__1 in univ {}
+fact { u_____Equals_____Sel__1 = ((u_Sel___ClassRef_com_b20 = NullNode) => (u_userShippingListRepo) else (u_UnionOp___Relational22)) }
+sig mu_userShippingListRepo in univ {}
+fact { mu_userShippingListRepo = u_____Equals_____Sel__1 }
 sig BottomNode in FieldData {}

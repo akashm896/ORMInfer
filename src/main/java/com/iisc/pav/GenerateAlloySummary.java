@@ -735,7 +735,7 @@ public class GenerateAlloySummary {
 
 //            lazyGenerates.add(String.format("fact { %s = %s }",getUniqueName(node),getUniqueName(relation)));
             if(project instanceof ListNode) {
-                if(relation instanceof SelectNode)
+                if(relation instanceof SelectNode || relation instanceof JoinNode)
                     return getUniqueName(relation);
                 return getUniqueName(node);
             }
