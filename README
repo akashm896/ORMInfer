@@ -1,4 +1,4 @@
-Made changes in generateNRA() present in GenerateAlloySummary.java
+    Made changes in generateNRA() present in GenerateAlloySummary.java
 properties passing are Negative(41) => 1,10,12,2,20,21,22,23,25,26,27,29,3,31,35,36,7,8,14,15,16,17,18,52,55,51,59,9,4,32,33,34,37,44,50,48,45,42,46,47
 
 /////////////
@@ -10,3 +10,9 @@ changed the generateNRA() to handle it
 Made some change in generateNRA()
 properties passing are Negative(41) => 13,1,10,12,2,20,21,22,23,25,26,27,29,3,31,35,36,7,8,14,15,16,17,18,55,51,57,59,9,4,32,33,34,37,44,50,48,45,42,46,47
 
+////////////
+Made some change in generateNRA()
+properties passing are Negative(43) => 13,1,10,12,2,20,21,22,23,25,26,27,29,3,31,35,36,7,8,14,15,16,17,18,52,55,51,57,58,59,9,4,32,33,34,37,44,50,48,45,42,46,47
+
+
+14, 16, 17, 51

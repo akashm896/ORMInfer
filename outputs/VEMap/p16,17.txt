@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: com.shakeel.controller.OrdersController: java.lang.String productsList(org.springframework.ui.Model)
 github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
-starttime, test: 1679849196221
+starttime, test: 1681134176328
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: java.lang.Long is a phantom class!
@@ -698,6 +698,7 @@ construct/Utils.java: parseObjectInvoke(): relExpAndJoinedField = null
 AccessPath.java: getCollectionEntityType(): interfaceinvoke $r0.<com.shakeel.repository.ProductRepository: java.util.List findAll()>()
 AccessPath.java: getCollectionEntityType(): []
 AccessPath.java: getCollectionEntityType(): Collection Entity Type = com.shakeel.model.Product
+com.shakeel.repository.ProductRepository
 DIRRegionAnalyzer.java: constructDIR(): CASE: v1 = v2.foo(v3), foo is Non-library method
 AccessPath.java: isReturnTypeEntity(): check :java.util.List
 AccessPath.java: isReturnTypeEntity(): tags = []
@@ -894,6 +895,7 @@ construct/Utils.java: parseObjectInvoke(): relExpAndJoinedField = null
 AccessPath.java: getCollectionEntityType(): interfaceinvoke $r3.<com.shakeel.repository.OrderRepository: java.lang.Iterable findAll()>()
 AccessPath.java: getCollectionEntityType(): []
 AccessPath.java: getCollectionEntityType(): Collection Entity Type = com.shakeel.model.CustomerOrder
+com.shakeel.repository.OrderRepository
 DIRRegionAnalyzer.java: constructDIR(): CASE: v1 = v2.foo(v3), foo is Non-library method
 AccessPath.java: isReturnTypeEntity(): check :java.lang.Iterable
 AccessPath.java: isReturnTypeEntity(): tags = []
@@ -2572,10 +2574,7 @@ Product fields =
 {}
  Node contains nested fields
 u_Sel___ClassRef_com_s1
-Akash
 u_Join___Alpha___Class3
-Akash
 u_Join___Alpha___Class5
-Akash
 u_Join___Alpha___Class7
-Time elapsed: 0.675 seconds
+Time elapsed: 0.492 seconds

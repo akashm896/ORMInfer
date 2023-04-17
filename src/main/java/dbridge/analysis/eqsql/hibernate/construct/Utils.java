@@ -373,7 +373,8 @@ public class Utils {
                         // Akash
                         String repo = invokeExprStr.substring(invokeExprStr.indexOf("<")+1, invokeExprStr.indexOf(":"));
                         relExp = new SelectNode(new ClassRefNode(retType),new NullNode());
-//                        relExp = new SelectNode(new ClassRefNode(repo),new NullNode());
+                        System.out.println(repo);
+                        relExp = new SelectNode(new ClassRefNode(repo),new NullNode());
 
                     }
                     else{

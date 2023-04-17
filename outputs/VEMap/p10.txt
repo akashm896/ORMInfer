@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: com.reljicd.controller.PostController: java.lang.String editPostWithId(java.lang.Long,java.security.Principal,org.springframework.ui.Model)
 github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
-starttime, test: 1679851961909
+starttime, test: 1681282310759
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: org.springframework.beans.factory.annotation.Autowired is a phantom class!
@@ -127279,30 +127279,19 @@ Post fields =
 u_Join___Sel_____Class3
 u_Join___Sel_____Class11u_Sel___ClassRef_com_r12u_idu_post_id
 u_Join___Sel_____Class11
-Akash
 u_Join___Alpha___Class14
-Akash
 u_Join___Alpha___Class16
-Akash
 u_Join___Alpha___Class18
-Akash
 u_Join___Alpha___Class20
-Akash
 u_Join___Alpha___Class22
-Akash
 u_Join___Alpha___Class24
  Node contains nested fields
 u_Join___Sel_____Class3
 u_Join___Sel_____Class33u_Sel___ClassRef_com_r34u_user_idu_id
 u_Join___Sel_____Class33
-Akash
 u_Join___Alpha___Class36
-Akash
 u_Join___Alpha___Class38
-Akash
 u_Join___Alpha___Class40
-Akash
 u_Join___Alpha___Class42
-Akash
 u_Join___Alpha___Class44
-Time elapsed: 2.455 seconds
+Time elapsed: 2.621 seconds

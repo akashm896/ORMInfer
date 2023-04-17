@@ -165,7 +165,7 @@ public class DIRLoopRegionAnalyzer extends AbstractDIRRegionAnalyzer {
         d.dg("bodyVEMap: " + bodyVEMap);
         d.dg("headVEMap: " + headDIR.getVeMap());
         d.dg("headR: " + head);
-        System.out.println(FuncStackAnalyzer.funcDIRMap);
+//        System.out.println(FuncStackAnalyzer.funcDIRMap);
         VarNode i_itr = null;
         i_itr = getArrayIntItr(bodyVEMap, i_itr);
         Boolean isIterationOverArray = i_itr != null || bodyVEMap.containsKey(new VarNode("iteration_over_array"));
