@@ -56,6 +56,7 @@ u_user_id : FieldData,
 u_com_reljicd_model_User_c : u_com_reljicd_model_User,
 u_com_reljicd_model_Comment_c : u_com_reljicd_model_Comment,
 u_title : FieldData,
+u_username : FieldData,
 }
 sig u_com_reljicd_model_User {
 u_name : FieldData,
@@ -74,7 +75,6 @@ u_post_id : FieldData,
 u_com_reljicd_model_Post_c : u_com_reljicd_model_Post,
 u_user_id : FieldData,
 u_com_reljicd_model_User_c : u_com_reljicd_model_User,
-u_username : FieldData,
 }
 sig u_Sel___ClassRef_com_r12 in u_com_reljicd_model_Post {}
 pred meets_selection_criteria_of_u_Sel___ClassRef_com_r12[x: u_com_reljicd_model_Post] {

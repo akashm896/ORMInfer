@@ -932,10 +932,13 @@ public class GenerateAlloySummary {
             Node trueDag = node.getChild(1);
             Node falseDag = node.getChild(2);
             if(parent.toString().startsWith(prefix)) {
-                //its root node, will need its own sig.
+                String nodestr = getUniqueName(node);
                 lazyGenerates.add(String.format("sig %s in univ {}",getUniqueName(node)));
                 String fd = generateNRA(node,falseDag,columns, extras);
-                lazyGenerates.add(String.format("fact { %s = ((%s) => (%s) else (%s)) }",getUniqueName(node), generateNRA(node,condition,columns,extras), generateNRA(node,trueDag,columns,extras), fd));
+                String td = generateNRA(node,trueDag,columns,extras);
+                lazyGenerates.add(String.format("fact { %s = ((%s) => (%s) else (%s)) }",getUniqueName(node), generateNRA(node,condition,columns,extras), td, fd));
+                if(superType.containsKey(td) && superType.containsKey(fd))
+                    superType.put(nodestr, findIncomingTable(fd) + " + " + findIncomingTable(td));
                 return getUniqueName(node);
             }
             if(condition instanceof UnknownNode) {
@@ -946,7 +949,9 @@ public class GenerateAlloySummary {
                 String uvn = generateNRA(node,uv,columns,extras);
                 return String.format("((%s = %s) => (%s) else (%s))", conditionStr,uvn , trueDagStr, falseDagStr);
             }
-            return String.format("((%s) => (%s) else (%s))", generateNRA(node,condition,columns,extras), generateNRA(node,trueDag,columns,extras), generateNRA(node,falseDag,columns,extras));
+            String td = generateNRA(node,trueDag,columns,extras);
+            String fd = generateNRA(node,falseDag,columns,extras);
+            return String.format("((%s) => (%s) else (%s))", generateNRA(node,condition,columns,extras), td , fd);
 
         } else if (node instanceof BottomNode) {
             lazyGenerates.add(String.format("sig %s in BottomNode {}",getUniqueName(node)));
@@ -1057,11 +1062,16 @@ public class GenerateAlloySummary {
                 generateNRA(node, node.getChild(0), columns,extras);
             }
             StringBuilder sb = new StringBuilder();
+            String nodestr = getUniqueName(node);
+            String leftstr = getUniqueName(left);
+            String rightstr = getUniqueName(right);
+            System.out.println(nodestr+leftstr+rightstr);
             sb.append(String.format("sig %s in %s + %s {}\n", getUniqueName(node),getUniqueName(left),getUniqueName(right)));
             superType.put(getUniqueName(node),getUniqueName(left));
+            superType.put(nodestr, findIncomingTable(leftstr) + " + " + findIncomingTable(rightstr));
             sb.append(String.format("fact { %s = %s + %s }\n",getUniqueName(node), getUniqueName(left), getUniqueName(right)));
             lazyGenerates.add(sb.toString());
-            return getUniqueName(node);
+            return nodestr;
         }
         else if (node instanceof MethodWontHandleNode) {
             if(parent instanceof EqNode || parent instanceof NotEqNode) {
