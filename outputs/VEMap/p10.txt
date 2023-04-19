@@ -1,7 +1,7 @@
 EqSQLDriverTest.java: main(): Got the bench-dir option value: target/classes
 EqSQLDriverTest.java: main(): Got the controllersig option value: com.reljicd.controller.PostController: java.lang.String editPostWithId(java.lang.Long,java.security.Principal,org.springframework.ui.Model)
 github/Utils.java: getAbsBenchDir(): pwd: /home/akash/Study/3rd sem/Project/current use/NRAandLoops
-starttime, test: 1681282310759
+starttime, test: 1681884333656
 EqSQLDriver.java: doSetEntryPoints: inputPath is target/classes
 Warning: java.lang.Object is a phantom class!
 Warning: org.springframework.beans.factory.annotation.Autowired is a phantom class!
@@ -21341,7 +21341,6 @@ DIRRegionAnalyzer.java: constructDIR(): region = | BasicBlock1
 DIRRegionAnalyzer.java: constructDIR(): Basic block num: 1
 DIRRegionAnalyzer.java: constructDIR(): basic block = [this := @this: com.reljicd.controller.PostController, principal := @parameter0: java.security.Principal, post := @parameter1: com.reljicd.model.Post, if principal == null goto $z1 = 0, $r0 = interfaceinvoke principal.<java.security.Principal: java.lang.String getName()>(), $r1 = virtualinvoke post.<com.reljicd.model.Post: com.reljicd.model.User getUser()>(), $r2 = virtualinvoke $r1.<com.reljicd.model.User: java.lang.String getUsername()>(), $z0 = virtualinvoke $r0.<java.lang.String: boolean equals(java.lang.Object)>($r2), if $z0 == 0 goto $z1 = 0, $z1 = 1, goto [?= return $z1], $z1 = 0, return $z1]
 DIRRegionAnalyzer.java: constructDIR(): curUnit = $r0 = interfaceinvoke principal.<java.security.Principal: java.lang.String getName()>()
-DIRRegionAnalyzer.java: constructDIR(): Debug stop
 DIRRegionAnalyzer.java: constructDIR(): curUnit instance of JAssignStmt
 DIRRegionAnalyzer.java: constructDIR(): leftClass = class soot.jimple.internal.JimpleLocal
 DIRRegionAnalyzer.java: constructDIR(): rightClass = class soot.jimple.internal.JInterfaceInvokeExpr
@@ -127294,4 +127293,4 @@ u_Join___Alpha___Class38
 u_Join___Alpha___Class40
 u_Join___Alpha___Class42
 u_Join___Alpha___Class44
-Time elapsed: 2.621 seconds
+Time elapsed: 3.549 seconds

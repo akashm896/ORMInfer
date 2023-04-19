@@ -110,7 +110,7 @@ public class DIRRegionAnalyzer extends AbstractDIRRegionAnalyzer {
             // Workaround for soot bug where iterator of for (iterator : arr) is incremented instead of fetch next from Array.
             // i.e. ideally it should be iterator = arr[i++] in ith of the loop.
 
-            if(curUnit.toString().contains("ecurity.Principal: java.lang.String getName()>()")) {
+            if(curUnit.toString().contains("ngframework.samples.petclinic.owner.OwnerController: org.springframework.samples.petclinic.owner.OwnerRepository owners")) {
                 d.dg("Debug stop");
 //                System.out.println(FuncStackAnalyzer.funcDIRMap);
             }

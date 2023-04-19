@@ -200,6 +200,8 @@ public class GenerateAlloySummary {
                 }
                 String primary = generate(node,expression,new HashSet<String>(), new HashMap<String, String>());
                 write("//%s : m%s",node,getUniqueName(node));
+                String incomingTable = findIncomingTable(primary);
+                superType.put(node.toString(), incomingTable);
                 modelAttributes.put(node,primary);
 
 
@@ -214,6 +216,19 @@ public class GenerateAlloySummary {
             write("fact { mu_" + clnname + " = u_" + clnname + "}");
         }
 
+    }
+
+    private String findIncomingTable(String primary) {
+        if(primary.contains("."))
+            primary = primary.substring(0, primary.indexOf('.'));
+        while(superType.containsKey(primary) ){
+            primary = superType.get(primary);
+            if(primary.contains("Sel") || primary.contains("Carte"))
+                continue;
+            else
+                break;
+        }
+        return primary;
     }
 
     private boolean isDbNode(VarNode node) {
@@ -1359,7 +1374,10 @@ public class GenerateAlloySummary {
                 write(s);
         }
         for(Map.Entry<Node,String> entry:modelAttributes.entrySet()) {
-            write("sig %s in univ {}",'m'+getUniqueName(entry.getKey()));
+            if(superType.containsKey(entry.getKey().toString()))
+                write("sig %s in %s {}", 'm'+getUniqueName(entry.getKey()), superType.get(entry.getKey().toString()));
+            else
+                write("sig %s in univ {}",'m'+getUniqueName(entry.getKey()));
             write("fact { %s = %s }",'m'+getUniqueName(entry.getKey()), entry.getValue());
         }
         write("sig BottomNode in FieldData {}");
