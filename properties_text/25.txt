@@ -1,6 +1,6 @@
 assert s7 {((all o1, o2: u_org_springframework_samples_petclinic_owner_Owner | (o1.u_id = o2.u_id) iff o1 = o2) and
      (some o1: u_org_springframework_samples_petclinic_owner_Owner | o1.u_id = u_ownerId)) =>
-         some o1 : u_org_springframework_samples_petclinic_owner_Owner | mu___modelattribute__owner_id in o1.u_id and
-         mu___modelattribute__owner_telephone in o1.u_telephone}
+         some o1 : u_org_springframework_samples_petclinic_owner_Owner | mu___modelattribute__owner_id = o1.u_id and
+         mu___modelattribute__owner_telephone = o1.u_telephone}
 
 check s7 for 20
