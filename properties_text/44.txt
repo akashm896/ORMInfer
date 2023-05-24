@@ -1,0 +1,7 @@
+sig postCommentedOn in u_ts_this_commentServiceImpl_postServiceImpl_postRepository {}
+fact {all p : u_com_yyqian_imagine_repository_PostRepository | p.u_id = u_commentCreateForm_postId <=> p in postCommentedOn}
+assert r19 {some p : u_ts_this_commentServiceImpl_postServiceImpl_postRepository | (p.u_commentcount = postCommentedOn.u_commentCount + 1) and (p.u_id = u_commentCreateForm_postId)
+                                                                                    and (p in mu_this_commentServiceImpl_postServiceImpl_postRepository)
+}
+check r19 for 20
+

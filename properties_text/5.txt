@@ -1,0 +1,7 @@
+sig mu__r0_employeeRepository in univ {}
+fact { mu__r0_employeeRepository = u_____Equals_____Sel__1 }
+
+sig emptystr in FieldData{}
+assert alvinonedotone {all e : mu__r0_employeeRepository | 
+  (e.u_email = u_employee_email) => (e.u_id = u_employee_id)}
+check alvinonedotone for 20

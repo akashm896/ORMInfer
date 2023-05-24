@@ -1,0 +1,7 @@
+sig matchingOwner in u_org_springframework_samples_petclinic_owner_Owner {}
+
+assert r8 {all o : matchingOwner | some o1 : u_org_springframework_samples_petclinic_owner_Owner | (o
+= o1) and (o.u_firstName = o1.u_firstName) and (o.u_lastName =
+o1.u_lastName) and (o.u_id = o1.u_id) and (o.u_city = o1.u_city) and
+(o.u_address = o1.u_address) and (o.u_telephone = o1.u_telephone)}
+check r8 for 20

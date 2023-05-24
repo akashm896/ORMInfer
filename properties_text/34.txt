@@ -1,0 +1,2 @@
+assert a34 { mu_this_owners = u_this_owners}
+check a34 for 20

@@ -1,0 +1,8 @@
+// Checking a stronger assertion than what the user specified.
+// This is common for three properties
+
+sig postToUpvote in u_com_yyqian_imagine_repository_PostRepository {}
+fact { all p : u_com_yyqian_imagine_repository_PostRepository | p.u_id = u_id <=> p in postToUpvote }
+assert uvoteinrc {(u_MethodWontHandleOp49 = none) => some p : u_ts_this_voteServiceImpl_postServiceImpl_postRepository  | ((p.u_upVoteCount = postToUpvote.u_upVoteCount + 1) and (p.u_id = postToUpvote.u_id) and (p in mu_this_voteServiceImpl_postServiceImpl_postRepository)) }
+check uvoteinrc for 20
+

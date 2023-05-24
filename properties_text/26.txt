@@ -1,0 +1,10 @@
+sig alreadyPresent in u_this_owners {}
+fact {all y:u_this_owners | y.u_id = u_owner_id iff y in alreadyPresent}
+assert s8 {((u_MethodWontHandleOp8 = u_0) and (alreadyPresent = none)) => 
+  one new: u_ts_this_owners | mu_this_owners = u_this_owners + new and
+                              new.u_id = u_owner_id and new.u_address =
+                              u_owner_address and new.u_city = u_owner_city
+                              and new.u_telephone = u_owner_telephone and
+                              new.u_firstname = u_owner_firstName and
+                              new.u_lastname = u_owner_lastName}
+check s8 for 20

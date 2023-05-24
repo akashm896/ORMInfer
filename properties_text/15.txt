@@ -1,0 +1,2 @@
+assert existingunaffected {all p : u_this_productRepository | (p.u_productid != u_product_productId) => (p in mu_this_productRepository)}
+check existingunaffected for 20

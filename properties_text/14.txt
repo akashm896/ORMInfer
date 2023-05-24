@@ -1,0 +1,3 @@
+assert all_prods_displ {all p : u_com_shakeel_repository_ProductRepository | p in mu___modelattribute__products}
+check all_prods_displ for 20
+

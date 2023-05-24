@@ -1,0 +1,6 @@
+assert s3 {(u_owner_lastName != NullNode) => (u_MethodWontHandleOp12 =
+u_0 and u_MethodWontHandleOp11 != u_1) and (all o : u_Owner |
+(o.u_lastname != u_owner_lastName) ) => (mu___modelattribute__selections =
+none)}
+
+check s3 for 20

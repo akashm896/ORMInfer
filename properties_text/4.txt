@@ -1,0 +1,8 @@
+assert a4 {(some e: mu__r0_employeeRepository |
+  e.u_id = u_employee_id and e.u_firstname = u_employee_firstName and
+  e.u_lastname = u_employee_lastName and e.u_email = u_employee_email)
+and
+(all e1: u__r0_employeeRepository |
+  (e1.u_id != u_employee_id) =>  e1 in mu__r0_employeeRepository)
+}
+check a4 for 20

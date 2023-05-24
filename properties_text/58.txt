@@ -1,0 +1,4 @@
+one sig currentUser in u_com_bookstore_domain_User {}
+fact {all u : u_com_bookstore_domain_User | u.u_username = u_principalusername <=> u in currentUser}
+assert h9 {all sa : mu___modelattribute__userShippingList | sa in currentUser.u_com_bookstore_domain_UserShipping_c}
+check h9 for 20

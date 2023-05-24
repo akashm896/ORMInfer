@@ -1,0 +1,2 @@
+assert s9 {all p : mu___modelattribute__owner_pets | p in u_org_springframework_samples_petclinic_owner_Pet}
+check s9 for 20

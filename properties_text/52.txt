@@ -1,0 +1,21 @@
+one sig selectedbook in u_com_bookstore_domain_Book {}
+fact {all b : u_com_bookstore_domain_Book | b.u_id = u_id <=> b in selectedbook}
+assert h2 { mu___modelattribute__book_ourPrice = selectedbook.u_ourPrice
+        and mu___modelattribute__book_bookToCartItemsList = selectedbook.u_com_bookstore_domain_BookToCartItem_c
+        and mu___modelattribute__book_title = selectedbook.u_title
+        and mu___modelattribute__book_isbn = selectedbook.u_isbn
+        and mu___modelattribute__book_id = selectedbook.u_id
+        and mu___modelattribute__book_language = selectedbook.u_language
+        and mu___modelattribute__book_format = selectedbook.u_format
+        and mu___modelattribute__book_active = selectedbook.u_active
+        and mu___modelattribute__book_author = selectedbook.u_author
+        and mu___modelattribute__book_numberOfPages = selectedbook.u_numberOfPages
+        and mu___modelattribute__book_shippingWeight = selectedbook.u_shippingWeight
+        and mu___modelattribute__book_publicationDate = selectedbook.u_publicationDate
+        and mu___modelattribute__book_category = selectedbook.u_category
+        and mu___modelattribute__book_inStockNumber = selectedbook.u_inStockNumber
+        and mu___modelattribute__book_listPrice = selectedbook.u_listPrice
+        and mu___modelattribute__book_description = selectedbook.u_description
+        and mu___modelattribute__book_publisher = selectedbook.u_publisher
+}
+check h2 for 20

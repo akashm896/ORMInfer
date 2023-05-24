@@ -1,0 +1,2 @@
+assert t2p2 {all e: u_this_employeeRepository | e.u_id = u_id => e not in mu__r0_employeeRepository}
+check t2p2 for 20

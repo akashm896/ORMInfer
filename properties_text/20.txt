@@ -1,0 +1,12 @@
+assert s2 {(u_owner_lastName != NullNode ) => ((u_MethodWontHandleOp12
+= u_0 and u_MethodWontHandleOp11 != u_1)) =>
+(all o : mu___modelattribute__selections | one o1 : u_Owner | (o = o1) and
+ (o1.u_lastname = u_owner_lastName))
+and
+(u_owner_lastName = NullNode ) => ((u_MethodWontHandleOp12 = u_0 and
+u_MethodWontHandleOp11 != u_1)) =>
+(all o : mu___modelattribute__selections | one o1 : u_Owner | (o = o1) and
+ (o1.u_lastname = u___))
+}
+
+check s2 for 20

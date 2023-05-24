@@ -1,0 +1,16 @@
+one sig userShippingToDisp in u_com_bookstore_domain_UserShipping {}
+fact {all s : u_com_bookstore_domain_UserShipping | s.u_id = u_shippingAddressId <=> s in userShippingToDisp}
+one sig selectedUser in u_com_bookstore_domain_User {}
+fact {all u : u_com_bookstore_domain_User | u.u_username = u_principalusername <=> u in selectedUser}
+one sig userOfUserShippingToDisp in u_com_bookstore_domain_User{}
+fact {userOfUserShippingToDisp = userShippingToDisp.u_com_bookstore_domain_User_c}
+
+assert h8 {(selectedUser.u_id = userOfUserShippingToDisp.u_id) => mu___modelattribute__userShipping_userShippingStreet1 = userShippingToDisp.u_userShippingStreet1 and
+                                                                  mu___modelattribute__userShipping_userShippingStreet2 = userShippingToDisp.u_userShippingStreet2 and
+                                                                  mu___modelattribute__userShipping_userShippingCity    = userShippingToDisp.u_userShippingCity    and
+                                                                  mu___modelattribute__userShipping_userShippingState   = userShippingToDisp.u_userShippingState   and
+                                                                  mu___modelattribute__userShipping_userShippingCountry = userShippingToDisp.u_userShippingCountry and
+                                                                  mu___modelattribute__userShipping_userShippingZipcode = userShippingToDisp.u_userShippingZipcode
+}
+
+check h8 for 20

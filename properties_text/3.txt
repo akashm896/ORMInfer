@@ -1,0 +1,5 @@
+sig matchingEmployee in u_com_gorankitic_springboot_crudthymeleaf_entity_Employee {}
+fact { all y:u_com_gorankitic_springboot_crudthymeleaf_entity_Employee | y.u_id = u_id <=> y in matchingEmployee }
+
+assert HT3P1 {(matchingEmployee != none) => (mu___modelattribute__employee_id = u_id)}
+check HT3P1 for 20

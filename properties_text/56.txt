@@ -1,0 +1,11 @@
+assert h7 {some addr : mu_userShippingListRepo | addr.u_id = u_userShipping_id and
+                                                 addr.u_usershippingname = u_userShipping_userShippingName and
+                                                 addr.u_usershippingstreet1 = u_userShipping_userShippingStreet1 and
+                                                 addr.u_usershippingstreet2 = u_userShipping_userShippingStreet2 and
+                                                 addr.u_usershippingcity = u_userShipping_userShippingCity and
+                                                 addr.u_usershippingstate = u_userShipping_userShippingState and
+                                                 addr.u_usershippingcountry = u_userShipping_userShippingCountry and
+                                                 addr.u_usershippingzipcode = u_userShipping_userShippingZipcode and
+                                                 addr.u_usershippingdefault = u_1
+}
+check h7 for 20

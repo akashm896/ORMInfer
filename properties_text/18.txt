@@ -1,0 +1,2 @@
+assert restunaff {all o : u_this_orderRepository | (o.u_orderid != u_List___BottomNode___6.u_orderid) => o in mu_this_orderRepository}
+check restunaff for 20

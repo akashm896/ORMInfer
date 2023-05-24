@@ -1,0 +1,4 @@
+one sig toDelete in u_ts__r1_cartItemRepository {}
+fact {all d : u_ts__r1_cartItemRepository | d.u_id = u_id <=> d in toDelete}
+assert h6 {mu__r1_cartItemRepository = u__r1_cartItemRepository - toDelete}
+check h6 for 20
