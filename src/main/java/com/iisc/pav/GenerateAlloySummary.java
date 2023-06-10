@@ -139,7 +139,7 @@ public class GenerateAlloySummary {
                 .replace('-','_');
     }
     public GenerateAlloySummary(Map<VarNode, Node> veMap) throws IOException {
-        fileWriter = new FileWriter(CMDOptions.outfile != null ? CMDOptions.outfile : "outputs/Alloy/type2Alpha.als");
+        fileWriter = new FileWriter(CMDOptions.outfile != null ? CMDOptions.outfile : "outputs/Alloy/p59.als");
         printWriter = new PrintWriter(fileWriter);
 
         this.veMap = veMap;
@@ -1018,6 +1018,7 @@ public class GenerateAlloySummary {
             Node joinCond = node.getChild(2);
             String joinSig = getUniqueName(node);
             String selSig = getUniqueName(node.getChild(0));
+
             if(!(joinCond instanceof NullNode)) {
                 String leftVal = "u_" + getNRAFieldName(joinCond.getChild(0));
                 String rightVal = "u_" + getNRAFieldName(joinCond.getChild(1));
@@ -1025,13 +1026,18 @@ public class GenerateAlloySummary {
                 sb.append(String.format("fact { all v0 : %s, v1 : %s | v0.%s = v1.%s <=> v1 in v0.%s}",
                         selSig, right, leftVal, rightVal, expandingField));
                 System.out.println(joinSig + selSig + leftVal + rightVal);
+                addFieldToTable(right, rightVal, "FieldData");
+                NRArelationList = new ArrayList<>();
+                NRArelationList.add(getUniqueName(node));
+                lazyGenerates.add(sb.toString());
+                columns.add(right+"_c");
+                type.put(right+"_c", getUniqueName(node.getChild(1)));
+                generateNRA(node, node.getChild(0), columns, extras);
+                addFieldToTable(findIncomingTable(selSig), leftVal, "FieldData");
             }
-            NRArelationList = new ArrayList<>();
-            NRArelationList.add(getUniqueName(node));
-            lazyGenerates.add(sb.toString());
-            columns.add(right+"_c");
-            type.put(right+"_c", getUniqueName(node.getChild(1)));
-            generateNRA(node, node.getChild(0), columns, extras);
+
+
+
             return getUniqueName(node);
 
         }

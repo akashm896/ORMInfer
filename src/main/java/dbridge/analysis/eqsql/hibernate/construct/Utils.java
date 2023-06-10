@@ -1,3 +1,4 @@
+
 /*
 Copyright 2020 IIT Bombay.
 
@@ -46,6 +47,8 @@ import soot.tagkit.*;
 
 import static io.geetam.github.OptionalTypeInfo.*;
 import static io.geetam.github.accesspath.Flatten.getAllFields;
+import static io.geetam.github.accesspath.NRA.getJoinCondFromField;
+
 import com.iisc.pav.AlloyGenerator;
 import org.apache.bcel.classfile.*;
 
@@ -55,6 +58,8 @@ import org.apache.bcel.classfile.*;
 
 
 public class Utils {
+    private static SootClass baseClass;
+
     static VarNode fetchBase(Value source)  {
         Value base = null;
         if(source instanceof InstanceInvokeExpr)
@@ -812,7 +817,10 @@ public class Utils {
             AccessPath newAccp = baseAccp.clone();
             newAccp.append(mbVarF.getName());
             ClassRefNode rightClsRefNode = new ClassRefNode(mbVarF.getType().toString());
-            JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,new NullNode());
+            // Akash created below function  to create Join condition and not put NullOp
+            EqNode cond = getJoinCondition(baseAccpCls, mbVarF.getType().toString());
+//            JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,new NullNode());
+            JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode, cond);
             d.dg("check = "+newRelExpBase);
             RefType ftype = (RefType) mbVarF.getType();
             veMap.put(newAccp.toVarNode(), newRelExpBase);
@@ -825,7 +833,11 @@ public class Utils {
             AccessPath newAccp = baseAccp.clone();
             newAccp.append(mbVarF.getName());
             ClassRefNode rightClsRefNode = new ClassRefNode(mbVarF.getType().toString());
+            // Akash created below function  to create Join condition and not put NullOp
+            EqNode cond = getJoinCondition(baseAccpCls, mbVarF.getType().toString());
             JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,new NullNode());
+            if(cond != null)
+                newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,cond);
             RefType ftype = (RefType) mbVarF.getType();
             mapDBFetchAccessGraph(veMap, newAccp, newRelExpBase, ftype.getSootClass(), depth + 1);
         }
@@ -837,7 +849,11 @@ public class Utils {
             AccessPath newAccp = baseAccp.clone();
             newAccp.append(collF.getName());
             ClassRefNode rightClsRefNode = new ClassRefNode(actualCollFEleType);
+            // Akash created below function  to create Join condition and not put NullOp
+            EqNode cond = getJoinCondition(baseAccpCls, actualCollFEleType);
             JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,new NullNode());
+            if(cond != null)
+                newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,cond);
             veMap.put(newAccp.toVarNode(), newRelExpBase);
         }
 
@@ -848,10 +864,29 @@ public class Utils {
             AccessPath newAccp = baseAccp.clone();
             newAccp.append(mmf.getName());
             ClassRefNode rightClsRefNode = new ClassRefNode(actualCollFEleType);
-            JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,new NullNode());
+            // Akash created below function  to create Join condition and not put NullOp
+            EqNode cond = getJoinCondition(baseAccpCls, actualCollFEleType);
+//            JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,new NullNode());
+            JoinNode newRelExpBase = new JoinNode(relExpBaseAccp, rightClsRefNode,cond);
             veMap.put(newAccp.toVarNode(), newRelExpBase);
         }
 
+
+    }
+
+
+    public static EqNode getJoinCondition(SootClass baseClass, String subClass){
+        EqNode cond = null;
+        SootClass nestClass= Scene.v().getSootClass(subClass);
+        for(SootField sf : Flatten.getAllFields(baseClass)){
+            String s = sf.toString();
+            String fieldName = subClass.substring(subClass.lastIndexOf(".")+1);
+            if(s.toLowerCase().contains(fieldName.toLowerCase())){
+                cond=getJoinCondFromField(sf,nestClass,nestClass);
+            }
+            System.out.println(s+fieldName);
+        }
+        return cond;
 
     }
 
