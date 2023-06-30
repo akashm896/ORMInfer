@@ -139,7 +139,7 @@ public class GenerateAlloySummary {
                 .replace('-','_');
     }
     public GenerateAlloySummary(Map<VarNode, Node> veMap) throws IOException {
-        fileWriter = new FileWriter(CMDOptions.outfile != null ? CMDOptions.outfile : "outputs/Alloy/p59.als");
+        fileWriter = new FileWriter(CMDOptions.outfile != null ? CMDOptions.outfile : "outputs/Alloy/showOwner.als");
         printWriter = new PrintWriter(fileWriter);
 
         this.veMap = veMap;
@@ -178,9 +178,12 @@ public class GenerateAlloySummary {
         for(Object itr : keySet) { // @raghavan added the sorting of the keys
             VarNode node = (VarNode) itr;
 
-//            if (node.toString().equals("__modelattribute__"+attribute)) {
+
 
             if (node.toString().startsWith(prefix+attribute)) {
+//                if (!node.toString().equals("__modelattribute__owner.firstName")) {
+//                    continue;
+//                }
                 keypresent = true;
                 node = (VarNode) node.accept(new FuncResolver(funcDIRMap));
 //                System.out.println("key: " + node);
@@ -207,6 +210,11 @@ public class GenerateAlloySummary {
                         continue;
                     }
                 }
+//                else if(expression instanceof TernaryNode){
+//                    superType.put(node.toString(), "univ");
+//                    modelAttributes.put(node, primary);
+//                    continue;
+//                }
                 String incomingTable = findIncomingTable(primary);
                 superType.put(node.toString(), incomingTable);
                 modelAttributes.put(node,primary);
@@ -244,13 +252,6 @@ public class GenerateAlloySummary {
 
     public String generate(Node parent, Node node, Set<String> columns, Map<String, String> extras) {
         boolean isNRA = isNested(node, false);
-//        boolean isFlatFindAll = isFlatFindAll(node, 0);
-//        if(isFlatFindAll) {
-//            StringBuilder sb = new StringBuilder();
-//            String ret = processFlatFindAll(node, sb);
-//            lazyGenerates.add(sb.toString());
-//            return ret;
-//        }
         if(isNRA){ // checks if there is Project as child of List which means NRA
 //            return "";
             System.out.println(" Node contains nested fields");
@@ -726,7 +727,7 @@ public class GenerateAlloySummary {
                     else{
                         if(child instanceof NullNode)
                             continue;
-                        if(child instanceof FieldRefNode) {
+                        if(child instanceof FieldRefNode || child instanceof VarNode ) {
                             String supClass = getSuperType(relName);
                             String fieldName = getUniqueName(child);
                             addFieldToTable(supClass, fieldName, "FieldData");
@@ -1018,7 +1019,6 @@ public class GenerateAlloySummary {
             Node joinCond = node.getChild(2);
             String joinSig = getUniqueName(node);
             String selSig = getUniqueName(node.getChild(0));
-
             if(!(joinCond instanceof NullNode)) {
                 String leftVal = "u_" + getNRAFieldName(joinCond.getChild(0));
                 String rightVal = "u_" + getNRAFieldName(joinCond.getChild(1));
@@ -1026,18 +1026,13 @@ public class GenerateAlloySummary {
                 sb.append(String.format("fact { all v0 : %s, v1 : %s | v0.%s = v1.%s <=> v1 in v0.%s}",
                         selSig, right, leftVal, rightVal, expandingField));
                 System.out.println(joinSig + selSig + leftVal + rightVal);
-                addFieldToTable(right, rightVal, "FieldData");
-                NRArelationList = new ArrayList<>();
-                NRArelationList.add(getUniqueName(node));
-                lazyGenerates.add(sb.toString());
-                columns.add(right+"_c");
-                type.put(right+"_c", getUniqueName(node.getChild(1)));
-                generateNRA(node, node.getChild(0), columns, extras);
-                addFieldToTable(findIncomingTable(selSig), leftVal, "FieldData");
             }
-
-
-
+            NRArelationList = new ArrayList<>();
+            NRArelationList.add(getUniqueName(node));
+            lazyGenerates.add(sb.toString());
+            columns.add(right+"_c");
+            type.put(right+"_c", getUniqueName(node.getChild(1)));
+            generateNRA(node, node.getChild(0), columns, extras);
             return getUniqueName(node);
 
         }

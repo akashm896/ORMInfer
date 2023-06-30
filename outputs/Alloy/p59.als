@@ -50,94 +50,38 @@
 sig FieldData {}
 one sig u_1 extends FieldData {}
 one sig NullNode extends FieldData {}
-one sig u_name in FieldData {}
+one sig u___modelattribute__user_userShippingList in FieldData {}
+one sig u___modelattribute__user_shoppingCart_user_userRoles in FieldData {}
 one sig u___modelattribute__user_email in FieldData {}
-one sig u_roleId in FieldData {}
+one sig u___modelattribute__user_enabled in FieldData {}
 one sig u___modelattribute__user_lastName in FieldData {}
-one sig u_userRoleId in FieldData {}
-one sig u_ourPrice in FieldData {}
-one sig u_enabled in FieldData {}
+one sig u___modelattribute__user_shoppingCart_user_username in FieldData {}
 one sig u___modelattribute__user_username in FieldData {}
 one sig u_id in FieldData {}
-one sig u_author in FieldData {}
-one sig u_isbn in FieldData {}
 one sig u___modelattribute__user_userRoles in FieldData {}
-one sig u_phone in FieldData {}
-one sig u_bookImage in FieldData {}
-one sig u_userBillingZipcode in FieldData {}
+one sig u___modelattribute__user_shoppingCart_user_phone in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user_id in FieldData {}
-one sig u_active in FieldData {}
-one sig u_userShippingDefault in FieldData {}
-one sig u_cvc in FieldData {}
-one sig u_userShippingName in FieldData {}
-one sig u_inStockNumber in FieldData {}
+one sig u___modelattribute__user_shoppingCart_user_lastName in FieldData {}
 one sig u___modelattribute__user_shoppingCart_cartItemList in FieldData {}
 one sig u___modelattribute__user_shoppingCart_id in FieldData {}
-one sig u_firstName in FieldData {}
 one sig u_principal in FieldData {}
 one sig u___modelattribute__user_id in FieldData {}
-one sig u_holderName in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user_userPaymentList in FieldData {}
-one sig u_shippingMethod in FieldData {}
-one sig u_orderTotal in FieldData {}
-one sig u_defaultPayment in FieldData {}
-one sig u_subtotal in FieldData {}
-one sig u_language in FieldData {}
-one sig u_userShippingStreet2 in FieldData {}
+one sig u___modelattribute__user_shoppingCart_GrandTotal in FieldData {}
+one sig u___modelattribute__user in FieldData {}
+one sig u___modelattribute__user_userPaymentList in FieldData {}
 one sig u___modelattribute__user_firstName in FieldData {}
 one sig u___modelattribute__user_password in FieldData {}
-one sig u_userShippingStreet1 in FieldData {}
-one sig u_userBillingCity in FieldData {}
-one sig u_cardName in FieldData {}
-one sig u_description in FieldData {}
-one sig u___modelattribute__user_shoppingCartuser_shoppingCart in FieldData {}
-one sig u_shippingDate in FieldData {}
-one sig u___modelattribute__user_shoppingCart in FieldData {}
-one sig u___modelattribute__user_shoppingCart_user_password in FieldData {}
-one sig u_format in FieldData {}
-one sig u_orderDate in FieldData {}
-one sig u_userBillingStreet1 in FieldData {}
-one sig u_lastName in FieldData {}
-one sig u_userBillingStreet2 in FieldData {}
-one sig u_publisher in FieldData {}
-one sig u_principalusername in FieldData {}
-one sig u___modelattribute__user_userShippingList in FieldData {}
-one sig u_userShippingZipcode in FieldData {}
-one sig u_email in FieldData {}
-one sig u___modelattribute__user_shoppingCart_user_userRoles in FieldData {}
-one sig u___modelattribute__user_enabled in FieldData {}
-one sig u___modelattribute__user_shoppingCart_user_username in FieldData {}
-one sig u_orederStatus in FieldData {}
-one sig u_cardNumber in FieldData {}
-one sig u___modelattribute__user_shoppingCart_user_phone in FieldData {}
-one sig u_userBillingState in FieldData {}
-one sig u_publicationDate in FieldData {}
-one sig u_password in FieldData {}
-one sig u___modelattribute__user_shoppingCart_user_lastName in FieldData {}
-one sig u_GrandTotal in FieldData {}
-one sig u_type in FieldData {}
-one sig u_numberOfPages in FieldData {}
-one sig u_userShippingCity in FieldData {}
-one sig u___modelattribute__user_shoppingCart_GrandTotal in FieldData {}
-one sig u_title in FieldData {}
-one sig u___modelattribute__user in FieldData {}
-one sig u_userBillingCountry in FieldData {}
-one sig u___modelattribute__user_userPaymentList in FieldData {}
-one sig u_category in FieldData {}
 one sig u___modelattribute__user_phone in FieldData {}
-one sig u_expiryMonth in FieldData {}
-one sig u_expiryYear in FieldData {}
-one sig u_userBillingName in FieldData {}
-one sig u_qty in FieldData {}
+one sig u___modelattribute__user_shoppingCartuser_shoppingCart in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user_userShippingList in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user in FieldData {}
-one sig u_userShippingState in FieldData {}
+one sig u___modelattribute__user_shoppingCart in FieldData {}
+one sig u___modelattribute__user_shoppingCart_user_password in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user_firstName in FieldData {}
-one sig u_shippingWeight in FieldData {}
-one sig u_userShippingCountry in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user_enabled in FieldData {}
-one sig u_listPrice in FieldData {}
 one sig u___modelattribute__user_shoppingCart_user_email in FieldData {}
+one sig u_principalusername in FieldData {}
 sig u_com_bookstore_domain_User {
 u_firstName : FieldData,
 u_email : FieldData,
@@ -156,8 +100,17 @@ u_username : FieldData,
 u_principalusername : FieldData,
 }
 sig u_com_bookstore_domain_UserShipping {
+u_userShippingCity : FieldData,
 u_com_bookstore_domain_User_c : u_com_bookstore_domain_User,
+u_id : FieldData,
 u_user_id : FieldData,
+u_userShippingZipcode : FieldData,
+u_userShippingState : FieldData,
+u_userShippingStreet2 : FieldData,
+u_userShippingCountry : FieldData,
+u_userShippingDefault : FieldData,
+u_userShippingName : FieldData,
+u_userShippingStreet1 : FieldData,
 }
 sig u_com_bookstore_domain_ShoppingCart {
 u_lhs : FieldData,
@@ -169,6 +122,7 @@ u_null : FieldData,
 u_com_bookstore_domain_UserPayment_c : u_com_bookstore_domain_UserPayment,
 u_com_bookstore_domain_ShoppingCart_c : u_com_bookstore_domain_ShoppingCart,
 u_com_bookstore_domain_CartItem_c : u_com_bookstore_domain_CartItem,
+u_GrandTotal : FieldData,
 u_com_bookstore_domain_security_UserRole_c : u_com_bookstore_domain_security_UserRole,
 }
 sig u_com_bookstore_domain_Book {
@@ -176,34 +130,38 @@ u_title : FieldData,
 u_language : FieldData,
 u_rhs : FieldData,
 u_category : FieldData,
-u_description : FieldData,
 u_ourPrice : FieldData,
+u_description : FieldData,
 u_id : FieldData,
 u_author : FieldData,
 u_isbn : FieldData,
+u_bookImage : FieldData,
 u_com_bookstore_domain_BookToCartItem_c : u_com_bookstore_domain_BookToCartItem,
 u_active : FieldData,
 u_format : FieldData,
 u_publicationDate : FieldData,
 u_shippingWeight : FieldData,
 u_listPrice : FieldData,
-u_inStockNumber : FieldData,
 u_publisher : FieldData,
+u_inStockNumber : FieldData,
 u_numberOfPages : FieldData,
 }
 sig u_com_bookstore_domain_CartItem {
 u_lhs : FieldData,
 u_com_bookstore_domain_Book_c : u_com_bookstore_domain_Book,
 u_com_bookstore_domain_Order_c : u_com_bookstore_domain_Order,
+u_qty : FieldData,
 u_order_id : FieldData,
 u_id : FieldData,
 u_com_bookstore_domain_ShoppingCart_c : u_com_bookstore_domain_ShoppingCart,
 u_com_bookstore_domain_BookToCartItem_c : u_com_bookstore_domain_BookToCartItem,
 u_shopping_cart_id : FieldData,
+u_subtotal : FieldData,
 }
 sig u_com_bookstore_domain_BookToCartItem {
 u_com_bookstore_domain_Book_c : u_com_bookstore_domain_Book,
 u_com_bookstore_domain_Order_c : u_com_bookstore_domain_Order,
+u_id : FieldData,
 u_com_bookstore_domain_ShoppingCart_c : u_com_bookstore_domain_ShoppingCart,
 u_book_id : FieldData,
 u_com_bookstore_domain_BookToCartItem_c : u_com_bookstore_domain_BookToCartItem,
@@ -211,11 +169,20 @@ u_cart_tem_id : FieldData,
 u_com_bookstore_domain_CartItem_c : u_com_bookstore_domain_CartItem,
 }
 sig u_com_bookstore_domain_UserBilling {
+u_userBillingName : FieldData,
 u_lhs : FieldData,
+u_id : FieldData,
 u_null : FieldData,
+u_userBillingZipcode : FieldData,
 u_com_bookstore_domain_UserPayment_c : u_com_bookstore_domain_UserPayment,
+u_userBillingCountry : FieldData,
+u_userBillingState : FieldData,
+u_userBillingStreet1 : FieldData,
+u_userBillingStreet2 : FieldData,
+u_userBillingCity : FieldData,
 }
 sig u_com_bookstore_domain_security_UserRole {
+u_userRoleId : FieldData,
 u_com_bookstore_domain_User_c : u_com_bookstore_domain_User,
 u_user_id : FieldData,
 u_com_bookstore_domain_security_Role_c : u_com_bookstore_domain_security_Role,
@@ -224,194 +191,88 @@ u_com_bookstore_domain_security_UserRole_c : u_com_bookstore_domain_security_Use
 }
 sig u_com_bookstore_domain_Order {
 u_id : FieldData,
+u_shippingDate : FieldData,
+u_orederStatus : FieldData,
+u_shippingMethod : FieldData,
+u_orderTotal : FieldData,
+u_orderDate : FieldData,
 }
 sig u_com_bookstore_domain_UserPayment {
+u_holderName : FieldData,
 u_com_bookstore_domain_User_c : u_com_bookstore_domain_User,
-u_id : FieldData,
-u_user_id : FieldData,
+u_defaultPayment : FieldData,
 u_com_bookstore_domain_UserBilling_c : u_com_bookstore_domain_UserBilling,
 u_rhs : FieldData,
+u_cardName : FieldData,
+u_expiryMonth : FieldData,
+u_expiryYear : FieldData,
+u_id : FieldData,
+u_user_id : FieldData,
+u_cardNumber : FieldData,
+u_cvc : FieldData,
+u_type : FieldData,
 }
 sig u_com_bookstore_domain_security_Role {
 u_userRoleId : FieldData,
+u_name : FieldData,
 u_roleId : FieldData,
 u_com_bookstore_domain_security_UserRole_c : u_com_bookstore_domain_security_UserRole,
 }
-sig u_Sel___ClassRef_com_b58 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b58[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b58[y] <=> y in u_Sel___ClassRef_com_b58 }
-sig u_Sel___ClassRef_com_b156 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b156[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b156[y] <=> y in u_Sel___ClassRef_com_b156 }
-sig u_Sel___ClassRef_com_b116 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b116[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b116[y] <=> y in u_Sel___ClassRef_com_b116 }
-sig u_Sel___ClassRef_com_b61 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b61[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b61[y] <=> y in u_Sel___ClassRef_com_b61 }
-sig u_Sel___ClassRef_com_b113 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b113[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b113[y] <=> y in u_Sel___ClassRef_com_b113 }
-sig u_Sel___ClassRef_com_b124 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b124[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b124[y] <=> y in u_Sel___ClassRef_com_b124 }
-sig u_Sel___ClassRef_com_b149 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b149[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b149[y] <=> y in u_Sel___ClassRef_com_b149 }
-sig u_Sel___ClassRef_com_b164 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b164[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b164[y] <=> y in u_Sel___ClassRef_com_b164 }
-sig u_Sel___ClassRef_com_b4 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b4[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b4[y] <=> y in u_Sel___ClassRef_com_b4 }
-sig u_Sel___ClassRef_com_b35 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b35[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b35[y] <=> y in u_Sel___ClassRef_com_b35 }
-sig u_Sel___ClassRef_com_b73 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b73[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b73[y] <=> y in u_Sel___ClassRef_com_b73 }
-sig u_Sel___ClassRef_com_b182 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b182[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b182[y] <=> y in u_Sel___ClassRef_com_b182 }
-sig u_Sel___ClassRef_com_b128 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b128[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b128[y] <=> y in u_Sel___ClassRef_com_b128 }
-sig u_Sel___ClassRef_com_b77 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b77[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b77[y] <=> y in u_Sel___ClassRef_com_b77 }
-sig u_Sel___ClassRef_com_b45 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b45[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b45[y] <=> y in u_Sel___ClassRef_com_b45 }
-sig u_Sel___ClassRef_com_b106 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b106[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b106[y] <=> y in u_Sel___ClassRef_com_b106 }
-sig u_Sel___ClassRef_com_b200 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b200[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b200[y] <=> y in u_Sel___ClassRef_com_b200 }
-sig u_Sel___ClassRef_com_b136 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b136[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b136[y] <=> y in u_Sel___ClassRef_com_b136 }
-sig u_Sel___ClassRef_com_b153 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b153[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b153[y] <=> y in u_Sel___ClassRef_com_b153 }
-sig u_Sel___ClassRef_com_b161 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b161[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b161[y] <=> y in u_Sel___ClassRef_com_b161 }
-sig u_Sel___ClassRef_com_b213 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b213[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b213[y] <=> y in u_Sel___ClassRef_com_b213 }
-sig u_Sel___ClassRef_com_b1 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b1[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b1[y] <=> y in u_Sel___ClassRef_com_b1 }
-sig u_Sel___ClassRef_com_b64 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b64[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b64[y] <=> y in u_Sel___ClassRef_com_b64 }
-sig u_Sel___ClassRef_com_b101 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b101[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b101[y] <=> y in u_Sel___ClassRef_com_b101 }
-sig u_Sel___ClassRef_com_b55 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b55[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b55[y] <=> y in u_Sel___ClassRef_com_b55 }
-sig u_Sel___ClassRef_com_b2 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b2[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b2[y] <=> y in u_Sel___ClassRef_com_b2 }
-sig u_Sel___ClassRef_com_b132 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b132[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b132[y] <=> y in u_Sel___ClassRef_com_b132 }
-sig u_Sel___ClassRef_com_b53 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b53[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b53[y] <=> y in u_Sel___ClassRef_com_b53 }
-sig u_Sel___ClassRef_com_b67 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b67[x: u_com_bookstore_domain_User] {
-x.u_username = u_principalusername
-}
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b67[y] <=> y in u_Sel___ClassRef_com_b67 }
-sig u_Sel___ClassRef_com_b27 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b27[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b27[y] <=> y in u_Sel___ClassRef_com_b27 }
-sig u_Sel___ClassRef_com_b41 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b41[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b41[y] <=> y in u_Sel___ClassRef_com_b41 }
 sig u_Sel___ClassRef_com_b70 in u_com_bookstore_domain_User {}
 pred meets_selection_criteria_of_u_Sel___ClassRef_com_b70[x: u_com_bookstore_domain_User] {
 x.u_username = u_principalusername
 }
 fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b70[y] <=> y in u_Sel___ClassRef_com_b70 }
-sig u_Sel___ClassRef_com_b43 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b43[x: u_com_bookstore_domain_Book] {
+sig u_Sel___ClassRef_com_b136 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b136[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b136[y] <=> y in u_Sel___ClassRef_com_b136 }
+sig u_Sel___ClassRef_com_b120 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b120[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b120[y] <=> y in u_Sel___ClassRef_com_b120 }
+sig u_Sel___ClassRef_com_b109 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b109[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b109[y] <=> y in u_Sel___ClassRef_com_b109 }
+sig u_Sel___ClassRef_com_b132 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b132[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b132[y] <=> y in u_Sel___ClassRef_com_b132 }
+sig u_Sel___ClassRef_com_b64 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b64[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b64[y] <=> y in u_Sel___ClassRef_com_b64 }
+sig u_Sel___ClassRef_com_b37 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b37[x: u_com_bookstore_domain_Book] {
 x.u_id = u_id
 }
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b43[y] <=> y in u_Sel___ClassRef_com_b43 }
-sig u_Sel___ClassRef_com_b29 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b29[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b37[y] <=> y in u_Sel___ClassRef_com_b37 }
+sig u_Sel___ClassRef_com_b73 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b73[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
 }
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b29[y] <=> y in u_Sel___ClassRef_com_b29 }
-sig u_Sel___ClassRef_com_b31 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b31[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b73[y] <=> y in u_Sel___ClassRef_com_b73 }
+sig u_Sel___ClassRef_com_b106 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b106[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
 }
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b31[y] <=> y in u_Sel___ClassRef_com_b31 }
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b106[y] <=> y in u_Sel___ClassRef_com_b106 }
+sig u_Sel___ClassRef_com_b113 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b113[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b113[y] <=> y in u_Sel___ClassRef_com_b113 }
+sig u_Sel___ClassRef_com_b213 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b213[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b213[y] <=> y in u_Sel___ClassRef_com_b213 }
 sig u_Sel___ClassRef_com_b7 in u_com_bookstore_domain_Book {}
 pred meets_selection_criteria_of_u_Sel___ClassRef_com_b7[x: u_com_bookstore_domain_Book] {
 x.u_id = u_id
@@ -422,31 +283,31 @@ pred meets_selection_criteria_of_u_Sel___ClassRef_com_b23[x: u_com_bookstore_dom
 x.u_id = u_id
 }
 fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b23[y] <=> y in u_Sel___ClassRef_com_b23 }
-sig u_Sel___ClassRef_com_b33 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b33[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b33[y] <=> y in u_Sel___ClassRef_com_b33 }
-sig u_Sel___ClassRef_com_b49 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b49[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b49[y] <=> y in u_Sel___ClassRef_com_b49 }
-sig u_Sel___ClassRef_com_b25 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b25[x: u_com_bookstore_domain_Book] {
-x.u_id = u_id
-}
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b25[y] <=> y in u_Sel___ClassRef_com_b25 }
-sig u_Sel___ClassRef_com_b109 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b109[x: u_com_bookstore_domain_User] {
+sig u_Sel___ClassRef_com_b182 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b182[x: u_com_bookstore_domain_User] {
 x.u_username = u_principalusername
 }
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b109[y] <=> y in u_Sel___ClassRef_com_b109 }
-sig u_Sel___ClassRef_com_b140 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b140[x: u_com_bookstore_domain_User] {
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b182[y] <=> y in u_Sel___ClassRef_com_b182 }
+sig u_Sel___ClassRef_com_b164 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b164[x: u_com_bookstore_domain_User] {
 x.u_username = u_principalusername
 }
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b140[y] <=> y in u_Sel___ClassRef_com_b140 }
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b164[y] <=> y in u_Sel___ClassRef_com_b164 }
+sig u_Sel___ClassRef_com_b2 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b2[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b2[y] <=> y in u_Sel___ClassRef_com_b2 }
+sig u_Sel___ClassRef_com_b124 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b124[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b124[y] <=> y in u_Sel___ClassRef_com_b124 }
+sig u_Sel___ClassRef_com_b149 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b149[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b149[y] <=> y in u_Sel___ClassRef_com_b149 }
 sig u_Sel___ClassRef_com_b47 in u_com_bookstore_domain_Book {}
 pred meets_selection_criteria_of_u_Sel___ClassRef_com_b47[x: u_com_bookstore_domain_Book] {
 x.u_id = u_id
@@ -457,21 +318,141 @@ pred meets_selection_criteria_of_u_Sel___ClassRef_com_b145[x: u_com_bookstore_do
 x.u_username = u_principalusername
 }
 fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b145[y] <=> y in u_Sel___ClassRef_com_b145 }
-sig u_Sel___ClassRef_com_b37 in u_com_bookstore_domain_Book {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b37[x: u_com_bookstore_domain_Book] {
+sig u_Sel___ClassRef_com_b67 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b67[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b67[y] <=> y in u_Sel___ClassRef_com_b67 }
+sig u_Sel___ClassRef_com_b128 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b128[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b128[y] <=> y in u_Sel___ClassRef_com_b128 }
+sig u_Sel___ClassRef_com_b200 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b200[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b200[y] <=> y in u_Sel___ClassRef_com_b200 }
+sig u_Sel___ClassRef_com_b4 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b4[x: u_com_bookstore_domain_Book] {
 x.u_id = u_id
 }
-fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b37[y] <=> y in u_Sel___ClassRef_com_b37 }
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b4[y] <=> y in u_Sel___ClassRef_com_b4 }
+sig u_Sel___ClassRef_com_b55 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b55[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b55[y] <=> y in u_Sel___ClassRef_com_b55 }
+sig u_Sel___ClassRef_com_b153 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b153[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b153[y] <=> y in u_Sel___ClassRef_com_b153 }
+sig u_Sel___ClassRef_com_b156 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b156[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b156[y] <=> y in u_Sel___ClassRef_com_b156 }
+sig u_Sel___ClassRef_com_b53 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b53[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b53[y] <=> y in u_Sel___ClassRef_com_b53 }
+sig u_Sel___ClassRef_com_b29 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b29[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b29[y] <=> y in u_Sel___ClassRef_com_b29 }
+sig u_Sel___ClassRef_com_b43 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b43[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b43[y] <=> y in u_Sel___ClassRef_com_b43 }
+sig u_Sel___ClassRef_com_b45 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b45[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b45[y] <=> y in u_Sel___ClassRef_com_b45 }
+sig u_Sel___ClassRef_com_b140 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b140[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b140[y] <=> y in u_Sel___ClassRef_com_b140 }
+sig u_Sel___ClassRef_com_b31 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b31[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b31[y] <=> y in u_Sel___ClassRef_com_b31 }
+sig u_Sel___ClassRef_com_b58 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b58[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b58[y] <=> y in u_Sel___ClassRef_com_b58 }
+sig u_Sel___ClassRef_com_b77 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b77[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b77[y] <=> y in u_Sel___ClassRef_com_b77 }
+sig u_Sel___ClassRef_com_b33 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b33[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b33[y] <=> y in u_Sel___ClassRef_com_b33 }
+sig u_Sel___ClassRef_com_b25 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b25[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b25[y] <=> y in u_Sel___ClassRef_com_b25 }
+sig u_Sel___ClassRef_com_b1 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b1[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b1[y] <=> y in u_Sel___ClassRef_com_b1 }
+sig u_Sel___ClassRef_com_b35 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b35[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b35[y] <=> y in u_Sel___ClassRef_com_b35 }
+sig u_Sel___ClassRef_com_b27 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b27[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b27[y] <=> y in u_Sel___ClassRef_com_b27 }
+sig u_Sel___ClassRef_com_b161 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b161[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b161[y] <=> y in u_Sel___ClassRef_com_b161 }
+sig u_Sel___ClassRef_com_b116 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b116[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b116[y] <=> y in u_Sel___ClassRef_com_b116 }
+sig u_Sel___ClassRef_com_b49 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b49[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b49[y] <=> y in u_Sel___ClassRef_com_b49 }
 sig u_Sel___ClassRef_com_b39 in u_com_bookstore_domain_Book {}
 pred meets_selection_criteria_of_u_Sel___ClassRef_com_b39[x: u_com_bookstore_domain_Book] {
 x.u_id = u_id
 }
 fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b39[y] <=> y in u_Sel___ClassRef_com_b39 }
-sig u_Sel___ClassRef_com_b120 in u_com_bookstore_domain_User {}
-pred meets_selection_criteria_of_u_Sel___ClassRef_com_b120[x: u_com_bookstore_domain_User] {
+sig u_Sel___ClassRef_com_b41 in u_com_bookstore_domain_Book {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b41[x: u_com_bookstore_domain_Book] {
+x.u_id = u_id
+}
+fact { all y:u_com_bookstore_domain_Book | meets_selection_criteria_of_u_Sel___ClassRef_com_b41[y] <=> y in u_Sel___ClassRef_com_b41 }
+sig u_Sel___ClassRef_com_b61 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b61[x: u_com_bookstore_domain_User] {
 x.u_username = u_principalusername
 }
-fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b120[y] <=> y in u_Sel___ClassRef_com_b120 }
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b61[y] <=> y in u_Sel___ClassRef_com_b61 }
+sig u_Sel___ClassRef_com_b101 in u_com_bookstore_domain_User {}
+pred meets_selection_criteria_of_u_Sel___ClassRef_com_b101[x: u_com_bookstore_domain_User] {
+x.u_username = u_principalusername
+}
+fact { all y:u_com_bookstore_domain_User | meets_selection_criteria_of_u_Sel___ClassRef_com_b101[y] <=> y in u_Sel___ClassRef_com_b101 }
 sig u_Pi___Sel_____ClassRe28 in u_com_bookstore_domain_Book {}
 
 sig u_Join___Sel_____Class112 in u_com_bookstore_domain_ShoppingCart {}

@@ -2,7 +2,7 @@ sig matchingPost in u_com_reljicd_model_Post {}
 fact { all y:u_com_reljicd_model_Post |
   y.u_id = u_id <=> y in matchingPost }
 
-assert r {(matchingPost != none and u_principal != NullNode and 
+assert r {(matchingPost = none and u_principal != NullNode and 
 u_principalusername = matchingPost.u_com_reljicd_model_User_c.u_username) =>
 mu___modelattribute__post_title = matchingPost.u_title}
 check r for 20
